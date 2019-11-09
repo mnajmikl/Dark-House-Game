@@ -36,33 +36,40 @@ namespace DarkHouse.Inventory
         string Description { get; set; }
 
         /// <summary>
-        /// Add item
+        /// Add item to the inventory
         /// </summary>
         /// <param name="item">Item to add</param>
         /// <remarks>Add an item to the inventory</remarks>
         void Add(IItem item);
 
         /// <summary>
-        /// Remove item
+        /// Remove item from an inventory
         /// </summary>
-        /// <param name="item">Item to add</param>
-        /// <remarks>Remove an item to the inventory</remarks>
-        void Remove(IItem item);
+        /// <param name="index">Index of item to remove</param>
+        /// <remarks>Search and remove item from the inventory at the selected index <paramref name="index"/></remarks>
+        void Remove(int index);
+
+        /// <summary>
+        /// Remove item(s) from an inventory
+        /// </summary>
+        /// <param name="itemName">Item name to remove</param>
+        /// <remarks>Search and remove item(s) from the inventory using item name <paramref name="itemName"/></remarks>
+        void Remove(string itemName);
 
         /// <summary>
         /// Get item from an inventory
         /// </summary>
         /// <param name="index">Index of item to search</param>
         /// <returns><typeparamref name="IItem" /></returns>
-        /// <remarks>Get or set the inventory items at the selected index <paramref name="index"/></remarks>
+        /// <remarks>Get the inventory item at the selected index <paramref name="index"/></remarks>
         IItem GetItem(int index);
 
         /// <summary>
         /// Get item(s) from an inventory
         /// </summary>
         /// <param name="itemName">Item name to search</param>
-        /// <returns><typeparamref name="IItem" /></returns>
-        /// <remarks>Search and get item(s) from the inventory using item name <paramref name="itemName"/></remarks>
-        IItem GetItems(string itemName);
+        /// <returns>Array of <typeparamref name="IItem" /></returns>
+        /// <remarks>Get item(s) from the inventory using item name <paramref name="itemName"/></remarks>
+        IItem[] GetItems(string itemName);
     }
 }
