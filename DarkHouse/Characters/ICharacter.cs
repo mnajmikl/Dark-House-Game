@@ -13,24 +13,24 @@ namespace DarkHouse.Characters
     public interface ICharacter
     {
         /// <summary>
-        /// Item name
+        /// Character name
         /// </summary>
         /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the item name</remarks>
-        string Name { get; set; }
+        /// <remarks>Get or set the character name</remarks>
+        string Name { get; }
 
         /// <summary>
-        /// Item tag
+        /// Character title
         /// </summary>
         /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the item tag</remarks>
-        string Tag { get; set; }
+        /// <remarks>Get or set the character tag</remarks>
+        string Title { get; set; }
 
         /// <summary>
         /// Item description
         /// </summary>
         /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the item tag</remarks>
+        /// <remarks>Get or set the character tag</remarks>
         string Description { get; set; }
     }
 }
