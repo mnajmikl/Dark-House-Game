@@ -239,7 +239,7 @@
             <summary>
             Player inventories
             </summary>
-            <returns><see cref="T:System.Array"/></returns>
+            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
             <remarks>Get the Player inventories</remarks>
         </member>
         <member name="T:DarkHouse.Characters.Spook">
@@ -283,7 +283,7 @@
             <summary>
             Spook inventories
             </summary>
-            <returns><see cref="T:System.Array"/></returns>
+            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
             <remarks>Get the Spook inventories</remarks>
         </member>
         <member name="T:DarkHouse.Enums.MeasurementUnits">
@@ -300,13 +300,13 @@
             <summary>Imperial (1)</summary>
             <remarks>Measurement unit is imperial (feet)</remarks>
         </member>
-        <member name="T:DarkHouse.Game">
+        <member name="T:DarkHouse.Games.Game">
             <summary>
             Class Game
             </summary>
             <remarks>Defines a Game</remarks>
         </member>
-        <member name="M:DarkHouse.Game.#ctor(System.String,System.String,System.String,DarkHouse.House.IHouse,DarkHouse.Characters.ICharacter[])">
+        <member name="M:DarkHouse.Games.Game.#ctor(System.String,System.String,System.String,DarkHouse.House.IHouse,DarkHouse.Characters.ICharacter[])">
             <summary>
             Game constructor
             </summary>
@@ -314,50 +314,62 @@
             <param name="title">Game title</param>
             <param name="description">Game description</param>
             <param name="house">Game house object</param>
-            <param name="players">Game player objects</param>
+            <param name="players">Game characters objects</param>
             <remarks>Defines a new Game</remarks>
         </member>
-        <member name="P:DarkHouse.Game.House">
+        <member name="P:DarkHouse.Games.Game.House">
             <summary>
             House of current Game
             </summary>
             <returns><see cref="T:DarkHouse.House.IHouse" /></returns>
             <remarks>Returns the current game house</remarks>
         </member>
-        <member name="P:DarkHouse.Game.Players">
+        <member name="P:DarkHouse.Games.Game.Players">
             <summary>
             Characters of current Game
             </summary>
             <returns>Array of <see cref="T:DarkHouse.Characters.ICharacter" /></returns>
             <remarks>Returns the current game characters</remarks>
         </member>
-        <member name="P:DarkHouse.Game.Name">
+        <member name="P:DarkHouse.Games.Game.Name">
             <summary>
             Name of current Game
             </summary>
             <returns><see cref="T:System.String" /></returns>
             <remarks>Returns the current game name</remarks>
         </member>
-        <member name="P:DarkHouse.Game.Title">
+        <member name="P:DarkHouse.Games.Game.Title">
             <summary>
             Title of current Game
             </summary>
             <returns><see cref="T:System.String" /></returns>
             <remarks>Get or set the current game name</remarks>
         </member>
-        <member name="P:DarkHouse.Game.Description">
+        <member name="P:DarkHouse.Games.Game.Description">
             <summary>
             Description of current Game
             </summary>
             <returns><see cref="T:System.String" /></returns>
             <remarks>Get or set the current description name</remarks>
         </member>
-        <member name="M:DarkHouse.Game.GetHashCode">
+        <member name="M:DarkHouse.Games.Game.GetHashCode">
             <summary>
             Get the hash code of current Game
             </summary>
             <returns><see cref="T:System.Int32" /></returns>
             <remarks>Returns the current game hash code</remarks>
+        </member>
+        <member name="M:DarkHouse.Games.Game.CreateSession">
+            <summary>
+            Create game session
+            </summary>
+            <remarks>Use this method to create a game session</remarks>
+        </member>
+        <member name="M:DarkHouse.Games.Game.EndGame">
+            <summary>
+            End game session
+            </summary>
+            <remarks>Use this method to end a game session</remarks>
         </member>
         <member name="T:DarkHouse.House.IDoor">
             <summary>
@@ -378,6 +390,13 @@
             <returns>Array of <see cref="T:DarkHouse.House.IRoom" /></returns>
             <remarks>Get the rooms of a floor</remarks>
         </member>
+        <member name="P:DarkHouse.House.IFloor.Inventories">
+            <summary>
+            Floor inventories
+            </summary>
+            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
+            <remarks>Get the Floor inventories</remarks>
+        </member>
         <member name="T:DarkHouse.House.IHouse">
             <summary>
             IHouse Interface
@@ -390,6 +409,13 @@
             </summary>
             <returns>Array of <see cref="T:DarkHouse.House.IFloor" /></returns>
             <remarks>Get the floors of a house</remarks>
+        </member>
+        <member name="P:DarkHouse.House.IHouse.Inventories">
+            <summary>
+            House inventories
+            </summary>
+            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
+            <remarks>Get the House inventories</remarks>
         </member>
         <member name="T:DarkHouse.House.IHousePart">
             <summary>
@@ -428,7 +454,7 @@
             <summary>
             Determines whether a key matches a lock
             </summary>
-            <returns>see cref="bool" /></returns>
+            <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if key match lock</remarks>
         </member>
         <member name="T:DarkHouse.House.ILock">
@@ -441,7 +467,7 @@
             <summary>
             Determines whether an item has a key
             </summary>
-            <returns>see cref="bool" /></returns>
+            <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if the item has a key</remarks>
         </member>
         <member name="T:DarkHouse.House.IRoom">
@@ -449,6 +475,13 @@
             IRoom Interface
             </summary>
             <remarks>Defines a room</remarks>
+        </member>
+        <member name="P:DarkHouse.House.IRoom.Inventories">
+            <summary>
+            Room inventories
+            </summary>
+            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
+            <remarks>Get the Room inventories</remarks>
         </member>
         <member name="T:DarkHouse.House.IWindow">
             <summary>
@@ -650,17 +683,17 @@
             </summary>
             <remarks>Defines the initial coordinate for a space using a Point struct</remarks>
         </member>
-        <member name="T:DarkHouse.Shapes.ISpace3D">
-            <summary>
-            ISpace3D Interface
-            </summary>
-            <remarks>Defines a 3D space</remarks>
-        </member>
         <member name="T:DarkHouse.Shapes.ISpace2D">
             <summary>
             ISpace2D Interface
             </summary>
             <remarks>Defines a 2D space</remarks>
+        </member>
+        <member name="T:DarkHouse.Shapes.ISpace3D">
+            <summary>
+            ISpace3D Interface
+            </summary>
+            <remarks>Defines a 3D space</remarks>
         </member>
         <member name="T:DarkHouse.Shapes.IVolume">
             <summary>
