@@ -17,7 +17,7 @@ namespace DarkHouse.House
         /// <summary>
         /// Determines whether a key matches a lock
         /// </summary>
-        /// <returns>see cref="bool" /></returns>
+        /// <returns><see cref="bool" /></returns>
         /// <remarks>Returns true if key match lock</remarks>
         bool MatchLock(ILock _lock);
     }

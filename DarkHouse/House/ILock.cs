@@ -17,7 +17,7 @@ namespace DarkHouse.House
         /// <summary>
         /// Determines whether an item has a key
         /// </summary>
-        /// <returns>see cref="bool" /></returns>
+        /// <returns><see cref="bool" /></returns>
         /// <remarks>Returns true if the item has a key</remarks>
         bool HasKey();
     }

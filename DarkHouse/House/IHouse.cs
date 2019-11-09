@@ -4,6 +4,7 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
+using DarkHouse.Inventory;
 using DarkHouse.Shapes;
 
 namespace DarkHouse.House
@@ -20,5 +21,12 @@ namespace DarkHouse.House
         /// <returns>Array of <see cref="IFloor" /></returns>
         /// <remarks>Get the floors of a house</remarks>
         IFloor[] Floors { get; }
+
+        /// <summary>
+        /// House inventories
+        /// </summary>
+        /// <returns>Array of <see cref="IInventory{IItem}"/></returns>
+        /// <remarks>Get the House inventories</remarks>
+        public IInventory<IItem>[] Inventories { get; }
     }
 }
