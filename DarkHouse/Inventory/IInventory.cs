@@ -40,7 +40,7 @@ namespace DarkHouse.Inventory
         /// </summary>
         /// <returns><see cref="List{T}"/> array</returns>
         /// <remarks>Get or set the inventory items (array of List&gt;IItem&lt;)</remarks>
-        List<IItem>[] Items { get;  set; }
+        List<IItem> Items { get;  set; }
 
         /// <summary>
         /// Search for items in an inventory
