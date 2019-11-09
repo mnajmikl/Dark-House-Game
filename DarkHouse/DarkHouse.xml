@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DarkHouse</name>
+    </assembly>
+    <members>
+        <member name="T:DarkHouse.Behaviors.ILockable">
+            <summary>
+             ILockable Interface
+            </summary>
+            <remarks>Defines an lockable object</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.ILockable.IsLocked">
+            <summary>
+            Determines whether an object is locked
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is locked</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.ILockable.IsLockable">
+            <summary>
+            Determines whether an object can be locked
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object can be locked</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.ILockable.Lock">
+            <summary>
+            Lock an object
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is locked successfully</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.ILockable.Unlock">
+            <summary>
+            Unlock an object
+            </summary>
+            <returns></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is unlocked successfully</remarks>
+        </member>
+        <member name="T:DarkHouse.Behaviors.IMoveable">
+            <summary>
+            IMoveable Interface
+            </summary>
+            <remarks>Defines a moveable object</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.IMoveable.Move">
+            <summary>
+            Move an object
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is moving successfully</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.IMoveable.IsMoving">
+            <summary>
+            Determines whether the object is currently moving 
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is currently moving</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.IMoveable.IsMoveable">
+            <summary>
+            Determines whether the object is moveable
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is moveable</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.IMoveable.Stop">
+            <summary>
+            Stop an object
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if stopping the object is successful</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.IMoveable.IsStopped">
+            <summary>
+            Determines whether an object has been stopped
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object has been stopped</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.IMoveable.IsStoppable">
+            <summary>
+            Determines whether an object is capable of being stopped
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is capable of being stopped</remarks>
+        </member>
+        <member name="T:DarkHouse.Behaviors.IOpenable">
+            <summary>
+            IOpenable Interface
+            </summary>
+            <remarks>Defines an openable object</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.IOpenable.Close">
+            <summary>
+            Close an object
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true is closed successfully</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.IOpenable.Open">
+            <summary>
+            Open an object
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is opened successfullky</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.IOpenable.IsOpen">
+            <summary>
+            Determines whether an object is currently open
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is currently open</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.IOpenable.IsOpenable">
+            <summary>
+            Determines whether an object can be opened
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object can be opened</remarks>
+        </member>
+        <member name="T:DarkHouse.Enums.HouseTypes">
+            <summary>
+            HouseTypes enum
+            </summary>
+            <remarks>Type of houses</remarks>
+        </member>
+        <member name="F:DarkHouse.Enums.HouseTypes.Terrace">
+            <summary>Terrace (0)</summary>
+            <remarks>
+            House type is terrace (connected houses on both left and right). This is also known as linked house.
+            Terraces house at the leftmost or rightmost corner is connected to one house only.
+            </remarks>
+        </member>
+        <member name="F:DarkHouse.Enums.HouseTypes.SemiDetached">
+            <summary>SemiDetached (1)</summary>
+            <remarks>House type is semi detached (connected house is on the left or right only)</remarks>
+        </member>
+        <member name="F:DarkHouse.Enums.HouseTypes.Detached">
+            <summary>Detached (2)</summary>
+            <remarks>House type is detached (not connected to other houses)</remarks>
+        </member>
+        <member name="T:DarkHouse.Enums.MeasurementUnits">
+            <summary>
+            MeasurementUnits enum
+            </summary>
+            <remarks>Measurement units</remarks>
+        </member>
+        <member name="F:DarkHouse.Enums.MeasurementUnits.Metrics">
+            <summary>Metric (0)</summary>
+            <remarks>Measurement unit is metric (meter)</remarks>
+        </member>
+        <member name="F:DarkHouse.Enums.MeasurementUnits.Imperial">
+            <summary>Imperial (1)</summary>
+            <remarks>Measurement unit is imperial (feet)</remarks>
+        </member>
+        <member name="T:DarkHouse.Inventory.IInventory">
+            <summary>
+            IInventory Interface
+            </summary>
+            <remarks>Defines area of an inventory</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.IInventory.Name">
+            <summary>
+            Inventory name
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the inventory name</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.IInventory.Tag">
+            <summary>
+            Inventory tag
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the inventory tag</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.IInventory.Description">
+            <summary>
+            Inventory description
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the inventory tag</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.IInventory.Items">
+            <summary>
+            Inventory items
+            </summary>
+            <returns><see cref="T:DarkHouse.Inventory.IItem"/> array</returns>
+            <remarks>Get or set the inventory items</remarks>
+        </member>
+        <member name="T:DarkHouse.Inventory.IItem">
+            <summary>
+            IItem Interface
+            </summary>
+            <remarks>Defines area of an item</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.IItem.Name">
+            <summary>
+            Item name
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the item name</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.IItem.Tag">
+            <summary>
+            Item tag
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the item tag</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.IItem.Description">
+            <summary>
+            Item description
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the item tag</remarks>
+        </member>
+        <member name="T:DarkHouse.Shapes.IArea">
+            <summary>
+            IArea Interface
+            </summary>
+            <remarks>Defines area of a shape</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.IArea.Area">
+            <summary>
+            Get the area for a shape
+            </summary>
+            <returns><see cref="T:System.Single"/></returns>
+            <remarks>Each individual shape will need to implement this method with their unique formulation</remarks>
+        </member>
+        <member name="T:DarkHouse.Shapes.IShape">
+            <summary>
+            IShape Interface
+            </summary>
+            <remarks>Defines a shape</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.IShape.NumberOfSides">
+            <summary>
+            Number of sides for a shape
+            </summary>
+            <returns><see cref="T:System.Int32"/></returns>
+            <remarks>Get or set the number of sides</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.IShape.Sides">
+            <summary>
+            Sides for a shape
+            </summary>
+            <returns><see cref="T:DarkHouse.Shapes.Side"/> array</returns>
+            <remarks>Get or set the sides (array of Side) for a shape</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.IShape.Perimeter">
+            <summary>
+            Perimeter of a shape
+            </summary>
+            <returns><see cref="T:System.Single"/></returns>
+            <remarks>Returns the total perimeter of a shape</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.IShape.ShapeName">
+            <summary>
+            Shape name
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Returns a shape name</remarks>
+        </member>
+        <member name="T:DarkHouse.Shapes.IShape2D">
+            <summary>
+            IShape2D Interface
+            </summary>
+            <remarks>Defines a two dimensional shape (2D shape)</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.IShape2D.Side">
+            <summary>
+            Get the sides of a shape
+            </summary>
+            <returns><see cref="T:System.Int32"/> array</returns>
+            <remarks>Returns the sides for a 2D shape</remarks>
+        </member>
+        <member name="T:DarkHouse.Shapes.IShape3D">
+            <summary>
+            IShape3D Interface
+            </summary>
+            <remarks>Defines a three dimensional shape (3D shape)</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.IShape3D.NumberOfSurface">
+            <summary>
+            Get the number surface of a 3D shape
+            </summary>
+            <returns><see cref="T:System.Int32"/></returns>
+            <remarks>Returns the number surface for a 3D shape</remarks>
+        </member>
+        <member name="T:DarkHouse.Shapes.ISpace">
+            <summary>
+            ISpace Interface
+            </summary>
+            <remarks>Defines a space</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.ISpace.InitialCoordinate">
+            <summary>
+            Get or set the initial coordinate for a space
+            </summary>
+            <returns><see cref="T:System.Drawing.PointF" /></returns>
+            <remarks>Defines the initial coordinate for a space using a Point struct</remarks>
+        </member>
+        <member name="T:DarkHouse.Shapes.IVolume">
+            <summary>
+            IVolume Interface
+            </summary>
+            <remarks>Defines volume of a shape</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.IVolume.Volume">
+            <summary>
+            Get the volume for a shape
+            </summary>
+            <returns><see cref="T:System.Single"/></returns>
+            <remarks>Each individual shape will need to implement this method with their unique formulation</remarks>
+        </member>
+        <member name="T:DarkHouse.Shapes.Side">
+            <summary>
+            Side struct
+            </summary>
+            <remarks>Defines side of a shape</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.Side.#ctor(System.Single)">
+            <summary>
+            Constructor of a Side
+            </summary>
+            <param name="length">Value of the Length <see cref="T:System.Single"/></param>
+            <remarks>Defines a new side with a given length</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.Side.Length">
+            <summary>
+            Length of a side
+            </summary>
+            <returns><see cref="T:System.Single"/></returns>
+            <remarks>Get or set the length of a side</remarks>
+        </member>
+    </members>
+</doc>
