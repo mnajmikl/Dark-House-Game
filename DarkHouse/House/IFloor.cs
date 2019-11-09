@@ -4,13 +4,15 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
+using DarkHouse.Shapes;
+
 namespace DarkHouse.House
 {
     /// <summary>
     /// IFloor Interface
     /// </summary>
     /// <remarks>Defines a floor</remarks>
-    public interface IFloor : IHousePart
+    public interface IFloor : IHousePart, ISpace2D
     {
         /// <summary>
         /// Floors in a house

@@ -12,7 +12,7 @@ namespace DarkHouse.House
     /// IHouse Interface
     /// </summary>
     /// <remarks>Defines a house</remarks>
-    public interface IHouse : IShape3D, IHousePart
+    public interface IHouse : IHousePart, ISpace3D
     {
         /// <summary>
         /// Floors in a house

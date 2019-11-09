@@ -13,7 +13,7 @@ namespace DarkHouse.House
     /// IDoor Interface
     /// </summary>
     /// <remarks>Defines a door</remarks>
-    public interface IDoor : ILockable, IOpenable, IShape3D, IHousePart
+    public interface IDoor : IHousePart, ILockable, IOpenable, IShape3D
     {
     }
 }
