@@ -128,24 +128,54 @@
         </member>
         <member name="P:DarkHouse.Characters.ICharacter.Name">
             <summary>
-            Item name
+            Character name
             </summary>
             <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the item name</remarks>
+            <remarks>Get or set the character name</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.ICharacter.Tag">
+        <member name="P:DarkHouse.Characters.ICharacter.Title">
             <summary>
-            Item tag
+            Character title
             </summary>
             <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the item tag</remarks>
+            <remarks>Get or set the character tag</remarks>
         </member>
         <member name="P:DarkHouse.Characters.ICharacter.Description">
             <summary>
             Item description
             </summary>
             <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the item tag</remarks>
+            <remarks>Get or set the character tag</remarks>
+        </member>
+        <member name="T:DarkHouse.Characters.Player">
+            <summary>
+            Class Player
+            </summary>
+            <remarks>Defines a game player</remarks>
+        </member>
+        <member name="M:DarkHouse.Characters.Player.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructor of a Player
+            </summary>
+            <param name="description">Description of the player</param>
+            <param name="title">Player tag</param>
+            <param name="name">Player display name</param>
+            <remarks>Defines a new player with name, tag and description</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.Player.Name">
+            <summary>
+            Constructor of a Player
+            </summary>
+        </member>
+        <member name="P:DarkHouse.Characters.Player.Title">
+            <summary>
+            Constructor of a Player
+            </summary>
+        </member>
+        <member name="P:DarkHouse.Characters.Player.Description">
+            <summary>
+            Constructor of a Player
+            </summary>
         </member>
         <member name="T:DarkHouse.Enums.MeasurementUnits">
             <summary>
@@ -160,6 +190,51 @@
         <member name="F:DarkHouse.Enums.MeasurementUnits.Imperial">
             <summary>Imperial (1)</summary>
             <remarks>Measurement unit is imperial (feet)</remarks>
+        </member>
+        <member name="T:DarkHouse.Game">
+            <summary>
+            Class Game
+            </summary>
+            <remarks>Defines a Game</remarks>
+        </member>
+        <member name="M:DarkHouse.Game.#ctor(System.String,System.String,System.String,DarkHouse.House.IHouse,DarkHouse.Characters.ICharacter[])">
+            <summary>
+            Game constructor
+            </summary>
+            <param name="name">Game name</param>
+            <param name="title">Game title</param>
+            <param name="description">Game description</param>
+            <param name="house">Game house object</param>
+            <param name="players">Game player objects</param>
+            <remarks>Defines a new Game</remarks>
+        </member>
+        <member name="P:DarkHouse.Game.House">
+            <summary>
+            Get the house of current Game
+            </summary>
+            <returns><see cref="T:DarkHouse.House.IHouse" /></returns>
+            <remarks>Returns the current game house</remarks>
+        </member>
+        <member name="P:DarkHouse.Game.Players">
+            <summary>
+            Get the house of current Game
+            </summary>
+            <returns>Array of <see cref="T:DarkHouse.Characters.ICharacter" /></returns>
+            <remarks>Returns the current game characters</remarks>
+        </member>
+        <member name="P:DarkHouse.Game.Name">
+            <summary>
+            Get the house of current Game
+            </summary>
+            <returns><see cref="T:System.String" /></returns>
+            <remarks>Returns the current game name</remarks>
+        </member>
+        <member name="M:DarkHouse.Game.GetHashCode">
+            <summary>
+            Get the hash code of current Game
+            </summary>
+            <returns><see cref="T:System.Int32" /></returns>
+            <remarks>Returns the current game hash code</remarks>
         </member>
         <member name="T:DarkHouse.House.IDoor">
             <summary>
