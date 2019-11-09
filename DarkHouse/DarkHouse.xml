@@ -120,6 +120,33 @@
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if the object can be opened</remarks>
         </member>
+        <member name="T:DarkHouse.Characters.ICharacter">
+            <summary>
+            ICharacter Interface
+            </summary>
+            <remarks>Defines a game character</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.ICharacter.Name">
+            <summary>
+            Item name
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the item name</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.ICharacter.Tag">
+            <summary>
+            Item tag
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the item tag</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.ICharacter.Description">
+            <summary>
+            Item description
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the item tag</remarks>
+        </member>
         <member name="T:DarkHouse.Enums.MeasurementUnits">
             <summary>
             MeasurementUnits enum
