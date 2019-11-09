@@ -120,27 +120,6 @@
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if the object can be opened</remarks>
         </member>
-        <member name="T:DarkHouse.Enums.HouseTypes">
-            <summary>
-            HouseTypes enum
-            </summary>
-            <remarks>Type of houses</remarks>
-        </member>
-        <member name="F:DarkHouse.Enums.HouseTypes.Terrace">
-            <summary>Terrace (0)</summary>
-            <remarks>
-            House type is terrace (connected houses on both left and right). This is also known as linked house.
-            Terraces house at the leftmost or rightmost corner is connected to one house only.
-            </remarks>
-        </member>
-        <member name="F:DarkHouse.Enums.HouseTypes.SemiDetached">
-            <summary>SemiDetached (1)</summary>
-            <remarks>House type is semi detached (connected house is on the left or right only)</remarks>
-        </member>
-        <member name="F:DarkHouse.Enums.HouseTypes.Detached">
-            <summary>Detached (2)</summary>
-            <remarks>House type is detached (not connected to other houses)</remarks>
-        </member>
         <member name="T:DarkHouse.Enums.MeasurementUnits">
             <summary>
             MeasurementUnits enum
@@ -155,17 +134,64 @@
             <summary>Imperial (1)</summary>
             <remarks>Measurement unit is imperial (feet)</remarks>
         </member>
+        <member name="T:DarkHouse.House.IDoor">
+            <summary>
+            IDoor Interface
+            </summary>
+            <remarks>Defines a door</remarks>
+        </member>
         <member name="T:DarkHouse.House.IFloor">
             <summary>
             IFloor Interface
             </summary>
             <remarks>Defines a floor</remarks>
         </member>
+        <member name="P:DarkHouse.House.IFloor.Rooms">
+            <summary>
+            Floors in a house
+            </summary>
+            <returns>Array of <see cref="T:DarkHouse.House.IRoom" /></returns>
+            <remarks>Get the rooms of a floor</remarks>
+        </member>
         <member name="T:DarkHouse.House.IHouse">
             <summary>
             IHouse Interface
             </summary>
             <remarks>Defines a house</remarks>
+        </member>
+        <member name="P:DarkHouse.House.IHouse.Floors">
+            <summary>
+            Floors in a house
+            </summary>
+            <returns>Array of <see cref="T:DarkHouse.House.IFloor" /></returns>
+            <remarks>Get the floors of a house</remarks>
+        </member>
+        <member name="T:DarkHouse.House.IHousePart">
+            <summary>
+            IHousePart Interface
+            </summary>
+            <remarks>Defines a house part</remarks>
+        </member>
+        <member name="P:DarkHouse.House.IHousePart.Name">
+            <summary>
+            House part name
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the house part name</remarks>
+        </member>
+        <member name="P:DarkHouse.House.IHousePart.Tag">
+            <summary>
+            House part tag
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the house part tag</remarks>
+        </member>
+        <member name="P:DarkHouse.House.IHousePart.Description">
+            <summary>
+            House part description
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the house part tag</remarks>
         </member>
         <member name="T:DarkHouse.House.IRoom">
             <summary>
@@ -283,19 +309,30 @@
             </summary>
             <remarks>Defines a shape</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.IShape.NumberOfSides">
+        <member name="P:DarkHouse.Shapes.IShape.Name">
             <summary>
-            Number of sides for a shape
+            Shape name
             </summary>
-            <returns><see cref="T:System.Int32"/></returns>
-            <remarks>Get or set the number of sides</remarks>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Returns a shape name</remarks>
         </member>
         <member name="P:DarkHouse.Shapes.IShape.Sides">
             <summary>
             Sides for a shape
             </summary>
-            <returns><see cref="T:DarkHouse.Shapes.Side"/> array</returns>
-            <remarks>Get or set the sides (array of Side) for a shape</remarks>
+            <returns>Array of <see cref="T:DarkHouse.Shapes.Side"/></returns>
+            <remarks>Returns the sides (array of <see cref="T:DarkHouse.Shapes.Side"/>) for a shape</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.IShape.Angles">
+            <summary>
+            Angles for a pair of sides
+            </summary>
+            <returns>Array of <see cref="T:System.Single"/></returns>
+            <remarks>
+            Returns the angles for a shape.
+            Total of angles must be 360 degrees.
+            Angles count counter clockwise from bottom-most left-most point.
+            </remarks>
         </member>
         <member name="M:DarkHouse.Shapes.IShape.Perimeter">
             <summary>
@@ -304,25 +341,18 @@
             <returns><see cref="T:System.Single"/></returns>
             <remarks>Returns the total perimeter of a shape</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.IShape.ShapeName">
-            <summary>
-            Shape name
-            </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Returns a shape name</remarks>
-        </member>
         <member name="T:DarkHouse.Shapes.IShape2D">
             <summary>
             IShape2D Interface
             </summary>
             <remarks>Defines a two dimensional shape (2D shape)</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.IShape2D.Side">
+        <member name="P:DarkHouse.Shapes.IShape2D.SidesCount">
             <summary>
-            Get the sides of a shape
+            Number of sides for a shape
             </summary>
-            <returns><see cref="T:System.Int32"/> array</returns>
-            <remarks>Returns the sides for a 2D shape</remarks>
+            <returns><see cref="T:System.Int32"/></returns>
+            <remarks>Returns the number of sides</remarks>
         </member>
         <member name="T:DarkHouse.Shapes.IShape3D">
             <summary>
@@ -330,12 +360,26 @@
             </summary>
             <remarks>Defines a three dimensional shape (3D shape)</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.IShape3D.NumberOfSurface">
+        <member name="P:DarkHouse.Shapes.IShape3D.SidesCount">
             <summary>
-            Get the number surface of a 3D shape
+            Get the number of sides of a 3D shape
             </summary>
             <returns><see cref="T:System.Int32"/></returns>
-            <remarks>Returns the number surface for a 3D shape</remarks>
+            <remarks>Returns the number of faces for a 3D shape</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.IShape3D.EdgesCount">
+            <summary>
+            Get the number of edges of a 3D shape
+            </summary>
+            <returns><see cref="T:System.Int32"/></returns>
+            <remarks>Returns the number of edges for a 3D shape</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.IShape3D.VerticesCount">
+            <summary>
+            Get the number of vertices of a 3D shape
+            </summary>
+            <returns><see cref="T:System.Int32"/></returns>
+            <remarks>Returns the number of vertices for a 3D shape</remarks>
         </member>
         <member name="T:DarkHouse.Shapes.ISpace">
             <summary>
@@ -343,12 +387,23 @@
             </summary>
             <remarks>Defines a space</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.ISpace.InitialCoordinate">
+        <member name="P:DarkHouse.Shapes.ISpace.InitialPoint">
             <summary>
             Get or set the initial coordinate for a space
             </summary>
-            <returns><see cref="T:System.Drawing.PointF" /></returns>
             <remarks>Defines the initial coordinate for a space using a Point struct</remarks>
+        </member>
+        <member name="T:DarkHouse.Shapes.ISpace3D">
+            <summary>
+            ISpace3D Interface
+            </summary>
+            <remarks>Defines a 3D space</remarks>
+        </member>
+        <member name="T:DarkHouse.Shapes.ISpace2D">
+            <summary>
+            ISpace2D Interface
+            </summary>
+            <remarks>Defines a 2D space</remarks>
         </member>
         <member name="T:DarkHouse.Shapes.IVolume">
             <summary>
