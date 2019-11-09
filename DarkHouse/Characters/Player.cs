@@ -70,7 +70,7 @@ namespace DarkHouse.Characters
         /// <summary>
         /// Player inventories
         /// </summary>
-        /// <returns><see cref="Array"/></returns>
+        /// <returns>Array of <see cref="IInventory{IItem}"/></returns>
         /// <remarks>Get the Player inventories</remarks>
         public IInventory<IItem>[] Inventories { get => __inventories; }
     }
