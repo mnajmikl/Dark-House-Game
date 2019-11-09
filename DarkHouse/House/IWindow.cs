@@ -9,7 +9,11 @@ using DarkHouse.Shapes;
 
 namespace DarkHouse.House
 {
-    interface IWindow : IHousePart, ILockable, IOpenable, IShape3D
+    /// <summary>
+    /// IWindow Interface
+    /// </summary>
+    /// <remarks>Defines a window</remarks>
+    public interface IWindow : IHousePart, ILockable, IOpenable, IShape3D
     {
     }
 }
