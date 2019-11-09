@@ -36,26 +36,33 @@ namespace DarkHouse.Inventory
         string Description { get; set; }
 
         /// <summary>
-        /// Inventory items
+        /// Add item
         /// </summary>
-        /// <returns><see cref="List{T}"/> array</returns>
-        /// <remarks>Get or set the inventory items (array of List&gt;IItem&lt;)</remarks>
-        List<IItem> Items { get;  set; }
+        /// <param name="item">Item to add</param>
+        /// <remarks>Add an item to the inventory</remarks>
+        void Add(IItem item);
 
         /// <summary>
-        /// Search for items in an inventory
+        /// Remove item
+        /// </summary>
+        /// <param name="item">Item to add</param>
+        /// <remarks>Remove an item to the inventory</remarks>
+        void Remove(IItem item);
+
+        /// <summary>
+        /// Get item from an inventory
         /// </summary>
         /// <param name="index">Index of item to search</param>
-        /// <returns><see cref="List{T}"/></returns>
-        /// <remarks>Get or set the inventory items</remarks>
-        List<IItem> SearchItem(int index);
+        /// <returns><typeparamref name="IItem" /></returns>
+        /// <remarks>Get or set the inventory items at the selected index <paramref name="index"/></remarks>
+        IItem GetItem(int index);
 
         /// <summary>
-        /// Search for items in an inventory
+        /// Get item(s) from an inventory
         /// </summary>
         /// <param name="itemName">Item name to search</param>
-        /// <returns><see cref="List{T}"/></returns>
-        /// <remarks>Get or set the inventory items</remarks>
-        List<IItem> SearchItem(string itemName);
+        /// <returns><typeparamref name="IItem" /></returns>
+        /// <remarks>Search and get item(s) from the inventory using item name <paramref name="itemName"/></remarks>
+        IItem GetItems(string itemName);
     }
 }
