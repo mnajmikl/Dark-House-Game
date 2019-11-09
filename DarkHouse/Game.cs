@@ -36,35 +36,57 @@ namespace DarkHouse
             __name = name;
             __title = title;
             __description = description;
+
             if (house != null)
                 __house = house;
 
             if (players != null && players.Length > 0)
                 players.CopyTo(__players, players.Length - 1);
             else
-                __players = new ICharacter[1];
+            {
+                // Default to 10 characters
+                __players = new ICharacter[10];
+                // First character is a player
+                // Three Guides
+                // Six Spooks
+            }
+                
         }
 
         /// <summary>
-        /// Get the house of current Game
+        /// House of current Game
         /// </summary>
         /// <returns><see cref="IHouse" /></returns>
         /// <remarks>Returns the current game house</remarks>
         public IHouse House { get => __house; }
 
         /// <summary>
-        /// Get the house of current Game
+        /// Characters of current Game
         /// </summary>
         /// <returns>Array of <see cref="ICharacter" /></returns>
         /// <remarks>Returns the current game characters</remarks>
         public ICharacter[] Players { get => __players; }
 
         /// <summary>
-        /// Get the house of current Game
+        /// Name of current Game
         /// </summary>
         /// <returns><see cref="string" /></returns>
         /// <remarks>Returns the current game name</remarks>
         public string Name { get => __name; }
+
+        /// <summary>
+        /// Title of current Game
+        /// </summary>
+        /// <returns><see cref="string" /></returns>
+        /// <remarks>Get or set the current game name</remarks>
+        public string Title { get => __title; set => __title = value; }
+
+        /// <summary>
+        /// Description of current Game
+        /// </summary>
+        /// <returns><see cref="string" /></returns>
+        /// <remarks>Get or set the current description name</remarks>
+        public string Description { get => __description; set => __description = value; }
 
         /// <summary>
         /// Get the hash code of current Game
@@ -73,7 +95,7 @@ namespace DarkHouse
         /// <remarks>Returns the current game hash code</remarks>
         public override int GetHashCode()
         {
-            return GetHashCode() & __name.GetHashCode() & __title.GetHashCode() & __description.GetHashCode();
+            return this.GetHashCode() & __name.GetHashCode() & __title.GetHashCode() & __description.GetHashCode();
         }
     }
 }
