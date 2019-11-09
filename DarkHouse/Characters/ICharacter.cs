@@ -4,7 +4,6 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
-using System;
 using DarkHouse.Inventory;
 
 namespace DarkHouse.Characters
