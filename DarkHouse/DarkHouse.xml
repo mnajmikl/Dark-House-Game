@@ -120,6 +120,50 @@
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if the object can be opened</remarks>
         </member>
+        <member name="T:DarkHouse.Characters.Guide">
+            <summary>
+            Class Guide
+            </summary>
+            <remarks>Defines a game Guide</remarks>
+        </member>
+        <member name="M:DarkHouse.Characters.Guide.#ctor(System.String,System.String,System.String,DarkHouse.Inventory.IInventory{DarkHouse.Inventory.IItem}[])">
+            <summary>
+            Constructor of a Guide
+            </summary>
+            <param name="description">Description of the Guide</param>
+            <param name="inventories"><see cref="T:DarkHouse.Inventory.IInventory`1"/> of the Guide</param>
+            <param name="title">Guide title</param>
+            <param name="name">Guide name</param>
+            <remarks>Defines a new Guide with name, title, and description</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.Guide.Name">
+            <summary>
+            Guide name
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the Guide name</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.Guide.Title">
+            <summary>
+            Guide title
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the Guide title</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.Guide.Description">
+            <summary>
+            Guide description
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the Guide description</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.Guide.Inventories">
+            <summary>
+            Player inventories
+            </summary>
+            <returns><see cref="T:System.Array"/></returns>
+            <remarks>Get the Player inventories</remarks>
+        </member>
         <member name="T:DarkHouse.Characters.ICharacter">
             <summary>
             ICharacter Interface
@@ -142,10 +186,17 @@
         </member>
         <member name="P:DarkHouse.Characters.ICharacter.Description">
             <summary>
-            Item description
+            Character description
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the character tag</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.ICharacter.Inventories">
+            <summary>
+            Character inventories
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get the character inventories</remarks>
         </member>
         <member name="T:DarkHouse.Characters.Player">
             <summary>
@@ -153,29 +204,87 @@
             </summary>
             <remarks>Defines a game player</remarks>
         </member>
-        <member name="M:DarkHouse.Characters.Player.#ctor(System.String,System.String,System.String)">
+        <member name="M:DarkHouse.Characters.Player.#ctor(System.String,System.String,System.String,DarkHouse.Inventory.IInventory{DarkHouse.Inventory.IItem}[])">
             <summary>
             Constructor of a Player
             </summary>
-            <param name="description">Description of the player</param>
-            <param name="title">Player tag</param>
-            <param name="name">Player display name</param>
-            <remarks>Defines a new player with name, tag and description</remarks>
+            <param name="description">Description of the Player</param>
+            <param name="inventories"><see cref="T:DarkHouse.Inventory.IInventory`1"/> of the Player</param>
+            <param name="title">Player title</param>
+            <param name="name">Player name</param>
+            <remarks>Defines a new Player with name, title, and description</remarks>
         </member>
         <member name="P:DarkHouse.Characters.Player.Name">
             <summary>
-            Constructor of a Player
+            Player name
             </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the Player name</remarks>
         </member>
         <member name="P:DarkHouse.Characters.Player.Title">
             <summary>
-            Constructor of a Player
+            Player title
             </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the Player title</remarks>
         </member>
         <member name="P:DarkHouse.Characters.Player.Description">
             <summary>
-            Constructor of a Player
+            Player description
             </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the Player description</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.Player.Inventories">
+            <summary>
+            Player inventories
+            </summary>
+            <returns><see cref="T:System.Array"/></returns>
+            <remarks>Get the Player inventories</remarks>
+        </member>
+        <member name="T:DarkHouse.Characters.Spook">
+            <summary>
+            Class Spook
+            </summary>
+            <remarks>Defines a game Spook</remarks>
+        </member>
+        <member name="M:DarkHouse.Characters.Spook.#ctor(System.String,System.String,System.String,DarkHouse.Inventory.IInventory{DarkHouse.Inventory.IItem}[])">
+            <summary>
+            Constructor of a Spook
+            </summary>
+            <param name="description">Description of the Spook</param>
+            <param name="inventories"><see cref="T:DarkHouse.Inventory.IInventory`1"/> of the Spook</param>
+            <param name="title">Spook title</param>
+            <param name="name">Spook display name</param>
+            <remarks>Defines a new Spook with name, title, and description</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.Spook.Name">
+            <summary>
+            Spook name
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the Spook name</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.Spook.Title">
+            <summary>
+            Spook title
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the Spook title</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.Spook.Description">
+            <summary>
+            Spook description
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the Spook description</remarks>
+        </member>
+        <member name="P:DarkHouse.Characters.Spook.Inventories">
+            <summary>
+            Player inventories
+            </summary>
+            <returns><see cref="T:System.Array"/></returns>
+            <remarks>Get the Player inventories</remarks>
         </member>
         <member name="T:DarkHouse.Enums.MeasurementUnits">
             <summary>
@@ -210,24 +319,38 @@
         </member>
         <member name="P:DarkHouse.Game.House">
             <summary>
-            Get the house of current Game
+            House of current Game
             </summary>
             <returns><see cref="T:DarkHouse.House.IHouse" /></returns>
             <remarks>Returns the current game house</remarks>
         </member>
         <member name="P:DarkHouse.Game.Players">
             <summary>
-            Get the house of current Game
+            Characters of current Game
             </summary>
             <returns>Array of <see cref="T:DarkHouse.Characters.ICharacter" /></returns>
             <remarks>Returns the current game characters</remarks>
         </member>
         <member name="P:DarkHouse.Game.Name">
             <summary>
-            Get the house of current Game
+            Name of current Game
             </summary>
             <returns><see cref="T:System.String" /></returns>
             <remarks>Returns the current game name</remarks>
+        </member>
+        <member name="P:DarkHouse.Game.Title">
+            <summary>
+            Title of current Game
+            </summary>
+            <returns><see cref="T:System.String" /></returns>
+            <remarks>Get or set the current game name</remarks>
+        </member>
+        <member name="P:DarkHouse.Game.Description">
+            <summary>
+            Description of current Game
+            </summary>
+            <returns><see cref="T:System.String" /></returns>
+            <remarks>Get or set the current description name</remarks>
         </member>
         <member name="M:DarkHouse.Game.GetHashCode">
             <summary>
