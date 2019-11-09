@@ -159,10 +159,10 @@
         </member>
         <member name="P:DarkHouse.Characters.Guide.Inventories">
             <summary>
-            Player inventories
+            Guide inventories
             </summary>
-            <returns><see cref="T:System.Array"/></returns>
-            <remarks>Get the Player inventories</remarks>
+            <returns><see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
+            <remarks>Get the Guide inventories</remarks>
         </member>
         <member name="T:DarkHouse.Characters.ICharacter">
             <summary>
@@ -195,7 +195,7 @@
             <summary>
             Character inventories
             </summary>
-            <returns><see cref="T:System.String"/></returns>
+            <returns><see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
             <remarks>Get the character inventories</remarks>
         </member>
         <member name="T:DarkHouse.Characters.Player">
@@ -281,10 +281,10 @@
         </member>
         <member name="P:DarkHouse.Characters.Spook.Inventories">
             <summary>
-            Player inventories
+            Spook inventories
             </summary>
             <returns><see cref="T:System.Array"/></returns>
-            <remarks>Get the Player inventories</remarks>
+            <remarks>Get the Spook inventories</remarks>
         </member>
         <member name="T:DarkHouse.Enums.MeasurementUnits">
             <summary>
