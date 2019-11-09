@@ -155,6 +155,24 @@
             <summary>Imperial (1)</summary>
             <remarks>Measurement unit is imperial (feet)</remarks>
         </member>
+        <member name="T:DarkHouse.House.IFloor">
+            <summary>
+            IFloor Interface
+            </summary>
+            <remarks>Defines a floor</remarks>
+        </member>
+        <member name="T:DarkHouse.House.IHouse">
+            <summary>
+            IHouse Interface
+            </summary>
+            <remarks>Defines a house</remarks>
+        </member>
+        <member name="T:DarkHouse.House.IRoom">
+            <summary>
+            IRoom Interface
+            </summary>
+            <remarks>Defines a room</remarks>
+        </member>
         <member name="T:DarkHouse.Inventory.IInventory`1">
             <summary>
             IInventory Interface
