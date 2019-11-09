@@ -155,39 +155,69 @@
             <summary>Imperial (1)</summary>
             <remarks>Measurement unit is imperial (feet)</remarks>
         </member>
-        <member name="T:DarkHouse.Inventory.IInventory">
+        <member name="T:DarkHouse.Inventory.IInventory`1">
             <summary>
             IInventory Interface
             </summary>
             <remarks>Defines area of an inventory</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.IInventory.Name">
+        <member name="P:DarkHouse.Inventory.IInventory`1.Name">
             <summary>
             Inventory name
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the inventory name</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.IInventory.Tag">
+        <member name="P:DarkHouse.Inventory.IInventory`1.Tag">
             <summary>
             Inventory tag
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the inventory tag</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.IInventory.Description">
+        <member name="P:DarkHouse.Inventory.IInventory`1.Description">
             <summary>
             Inventory description
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the inventory tag</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.IInventory.Items">
+        <member name="M:DarkHouse.Inventory.IInventory`1.Add(`0)">
             <summary>
-            Inventory items
+            Add item to the inventory
             </summary>
-            <returns><see cref="T:DarkHouse.Inventory.IItem"/> array</returns>
-            <remarks>Get or set the inventory items</remarks>
+            <param name="item">Item to add</param>
+            <remarks>Add an item to the inventory</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.IInventory`1.Remove(System.Int32)">
+            <summary>
+            Remove item from an inventory
+            </summary>
+            <param name="index">Index of item to remove</param>
+            <remarks>Search and remove item from the inventory at the selected index <paramref name="index"/></remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.IInventory`1.Remove(System.String)">
+            <summary>
+            Remove item(s) from an inventory
+            </summary>
+            <param name="itemName">Item name to remove</param>
+            <remarks>Search and remove item(s) from the inventory using item name <paramref name="itemName"/></remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.IInventory`1.GetItem(System.Int32)">
+            <summary>
+            Get item from an inventory
+            </summary>
+            <param name="index">Index of item to search</param>
+            <returns><typeparamref name="IItem" /></returns>
+            <remarks>Get the inventory item at the selected index <paramref name="index"/></remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.IInventory`1.GetItems(System.String)">
+            <summary>
+            Get item(s) from an inventory
+            </summary>
+            <param name="itemName">Item name to search</param>
+            <returns>Array of <typeparamref name="IItem" /></returns>
+            <remarks>Get item(s) from the inventory using item name <paramref name="itemName"/></remarks>
         </member>
         <member name="T:DarkHouse.Inventory.IItem">
             <summary>
