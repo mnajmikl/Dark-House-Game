@@ -4,15 +4,16 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
+using DarkHouse.Behaviors;
 using DarkHouse.Shapes;
 
 namespace DarkHouse.House
 {
     /// <summary>
-    /// IRoom Interface
+    /// IDoor Interface
     /// </summary>
-    /// <remarks>Defines a room</remarks>
-    public interface IRoom : IShape3D
+    /// <remarks>Defines a door</remarks>
+    public interface IDoor : ILockable, IOpenable, IShape3D, IHousePart
     {
     }
 }
