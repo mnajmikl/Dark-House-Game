@@ -7,10 +7,10 @@
 namespace DarkHouse.Shapes
 {
     /// <summary>
-    /// ISpace3D Interface
+    /// ISpace2D Interface
     /// </summary>
-    /// <remarks>Defines a 3D space</remarks>
-    public interface ISpace3D : ISpace, IShape3D
+    /// <remarks>Defines a 2D space</remarks>
+    public interface ISpace2D : ISpace, IShape2D
     {
     }
 }
