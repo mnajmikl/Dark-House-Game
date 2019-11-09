@@ -193,11 +193,43 @@
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the house part tag</remarks>
         </member>
+        <member name="T:DarkHouse.House.IKey">
+            <summary>
+            IKey Interface
+            </summary>
+            <remarks>Defines a key</remarks>
+        </member>
+        <member name="M:DarkHouse.House.IKey.MatchLock(DarkHouse.House.ILock)">
+            <summary>
+            Determines whether a key matches a lock
+            </summary>
+            <returns>see cref="bool" /></returns>
+            <remarks>Returns true if key match lock</remarks>
+        </member>
+        <member name="T:DarkHouse.House.ILock">
+            <summary>
+            ILock Interface
+            </summary>
+            <remarks>Defines a lock</remarks>
+        </member>
+        <member name="M:DarkHouse.House.ILock.HasKey">
+            <summary>
+            Determines whether an item has a key
+            </summary>
+            <returns>see cref="bool" /></returns>
+            <remarks>Returns true if the item has a key</remarks>
+        </member>
         <member name="T:DarkHouse.House.IRoom">
             <summary>
             IRoom Interface
             </summary>
             <remarks>Defines a room</remarks>
+        </member>
+        <member name="T:DarkHouse.House.IWindow">
+            <summary>
+            IWindow Interface
+            </summary>
+            <remarks>Defines a window</remarks>
         </member>
         <member name="T:DarkHouse.Inventory.IInventory`1">
             <summary>
