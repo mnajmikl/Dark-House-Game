@@ -4,7 +4,6 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
-using DarkHouse.Behaviors;
 using DarkHouse.Inventory;
 
 namespace DarkHouse.House
@@ -13,13 +12,13 @@ namespace DarkHouse.House
     /// ILock Interface
     /// </summary>
     /// <remarks>Defines a lock</remarks>
-    public interface ILock : IItem, ILockable
+    public interface ILock : IItem
     {
         /// <summary>
-        /// Determines whether a lock has a key
+        /// Determines whether an item has a key
         /// </summary>
         /// <returns>see cref="bool" /></returns>
-        /// <remarks>Returns true if lock has a key</remarks>
+        /// <remarks>Returns true if the item has a key</remarks>
         bool HasKey();
     }
 }
