@@ -4,13 +4,15 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
+using System.Collections.Generic;
+
 namespace DarkHouse.Inventory
 {
     /// <summary>
     /// IInventory Interface
     /// </summary>
     /// <remarks>Defines area of an inventory</remarks>
-    public interface IInventory
+    public interface IInventory<IItem>
     {
         /// <summary>
         /// Inventory name
@@ -36,8 +38,8 @@ namespace DarkHouse.Inventory
         /// <summary>
         /// Inventory items
         /// </summary>
-        /// <returns><see cref="IItem"/> array</returns>
+        /// <returns><see cref="List{T}"/> array</returns>
         /// <remarks>Get or set the inventory items</remarks>
-        IItem[] Items { get;  set; }
+        List<IItem> Items { get;  set; }
     }
 }
