@@ -17,8 +17,7 @@ namespace DarkHouse.Shapes
         /// <summary>
         /// Get or set the initial coordinate for a space
         /// </summary>
-        /// <returns><see cref="PointF" /></returns>
         /// <remarks>Defines the initial coordinate for a space using a Point struct</remarks>
-        PointF InitialCoordinate { get; set; }
+        PointF InitialPoint { set; }
     }
 }

@@ -4,6 +4,8 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
+using System.Collections.Generic;
+
 namespace DarkHouse.Shapes
 {
     /// <summary>
@@ -13,10 +15,10 @@ namespace DarkHouse.Shapes
     public interface IShape2D : IShape, IArea
     {
         /// <summary>
-        /// Get the sides of a shape
+        /// Number of sides for a shape
         /// </summary>
-        /// <returns><see cref="int"/> array</returns>
-        /// <remarks>Returns the sides for a 2D shape</remarks>
-        int[] Side { get; }
+        /// <returns><see cref="int"/></returns>
+        /// <remarks>Returns the number of sides</remarks>
+        int SidesCount { get; }
     }
 }

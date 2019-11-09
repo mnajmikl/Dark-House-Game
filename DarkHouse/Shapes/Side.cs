@@ -14,6 +14,7 @@ namespace DarkHouse.Shapes
     /// <remarks>Defines side of a shape</remarks>
     public struct Side
     {
+        // private members for Side struct
         private float __length;
 
         /// <summary>
