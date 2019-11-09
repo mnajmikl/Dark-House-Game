@@ -19,7 +19,7 @@ namespace DarkHouse.Characters
         private string __name;
         private string __title;
         private string __description;
-        private Array __inventories;
+        private IInventory<IItem>[] __inventories;
 
         /// <summary>
         /// Constructor of a Player
@@ -37,12 +37,12 @@ namespace DarkHouse.Characters
 
             if (inventories != null && inventories.Length > 0)
             {
-                __inventories = Array.CreateInstance(typeof(IInventory<IItem>), inventories.Length);
-                inventories.CopyTo(__inventories, inventories.Length - 1);
+                __inventories = new IInventory<IItem>[inventories.Length];
+                inventories.CopyTo(__inventories, 0);
             }
             else
             {
-                __inventories = Array.CreateInstance(typeof(IInventory<IItem>), 1);
+                __inventories = new IInventory<IItem>[1];
             }
         }
 
@@ -72,6 +72,6 @@ namespace DarkHouse.Characters
         /// </summary>
         /// <returns><see cref="Array"/></returns>
         /// <remarks>Get the Player inventories</remarks>
-        public Array Inventories { get => __inventories; }
+        public IInventory<IItem>[] Inventories { get => __inventories; }
     }
 }

@@ -39,8 +39,8 @@ namespace DarkHouse.Characters
         /// <summary>
         /// Character inventories
         /// </summary>
-        /// <returns><see cref="string"/></returns>
+        /// <returns><see cref="IInventory{IItem}"/></returns>
         /// <remarks>Get the character inventories</remarks>
-        Array Inventories { get; }
+        IInventory<IItem>[] Inventories { get; }
     }
 }
