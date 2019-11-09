@@ -10,10 +10,10 @@ using DarkHouse.Inventory;
 namespace DarkHouse.Characters
 {
     /// <summary>
-    /// Class Player
+    /// Class Spook
     /// </summary>
-    /// <remarks>Defines a game player</remarks>
-    public class Player : ICharacter
+    /// <remarks>Defines a game Spook</remarks>
+    public class Spook : ICharacter
     {
         // private class members
         private string __name;
@@ -22,14 +22,14 @@ namespace DarkHouse.Characters
         private Array __inventories;
 
         /// <summary>
-        /// Constructor of a Player
+        /// Constructor of a Spook
         /// </summary>
-        /// <param name="description">Description of the Player</param>
-        /// <param name="inventories"><see cref="IInventory{IItem}"/> of the Player</param>
-        /// <param name="title">Player title</param>
-        /// <param name="name">Player name</param>
-        /// <remarks>Defines a new Player with name, title, and description</remarks>
-        public Player(string name, string title, string description, IInventory<IItem>[] inventories)
+        /// <param name="description">Description of the Spook</param>
+        /// <param name="inventories"><see cref="IInventory{IItem}"/> of the Spook</param>
+        /// <param name="title">Spook title</param>
+        /// <param name="name">Spook display name</param>
+        /// <remarks>Defines a new Spook with name, title, and description</remarks>
+        public Spook(string name, string title, string description, IInventory<IItem>[] inventories)
         {
             __name = name;
             __title = title;
@@ -39,7 +39,7 @@ namespace DarkHouse.Characters
             {
                 __inventories = Array.CreateInstance(typeof(IInventory<IItem>), inventories.Length);
                 inventories.CopyTo(__inventories, inventories.Length - 1);
-            }
+            } 
             else
             {
                 __inventories = Array.CreateInstance(typeof(IInventory<IItem>), 1);
@@ -47,24 +47,24 @@ namespace DarkHouse.Characters
         }
 
         /// <summary>
-        /// Player name
+        /// Spook name
         /// </summary>
         /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the Player name</remarks>
+        /// <remarks>Get or set the Spook name</remarks>
         public string Name { get => __name; }
 
         /// <summary>
-        /// Player title
+        /// Spook title
         /// </summary>
         /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the Player title</remarks>
+        /// <remarks>Get or set the Spook title</remarks>
         public string Title { get => __title; set => __title = value; }
 
         /// <summary>
-        /// Player description
+        /// Spook description
         /// </summary>
         /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the Player description</remarks>
+        /// <remarks>Get or set the Spook description</remarks>
         public string Description { get => __description; set => __description = value; }
 
         /// <summary>

@@ -10,10 +10,10 @@ using DarkHouse.Inventory;
 namespace DarkHouse.Characters
 {
     /// <summary>
-    /// Class Player
+    /// Class Guide
     /// </summary>
-    /// <remarks>Defines a game player</remarks>
-    public class Player : ICharacter
+    /// <remarks>Defines a game Guide</remarks>
+    public class Guide : ICharacter
     {
         // private class members
         private string __name;
@@ -22,14 +22,14 @@ namespace DarkHouse.Characters
         private Array __inventories;
 
         /// <summary>
-        /// Constructor of a Player
+        /// Constructor of a Guide
         /// </summary>
-        /// <param name="description">Description of the Player</param>
-        /// <param name="inventories"><see cref="IInventory{IItem}"/> of the Player</param>
-        /// <param name="title">Player title</param>
-        /// <param name="name">Player name</param>
-        /// <remarks>Defines a new Player with name, title, and description</remarks>
-        public Player(string name, string title, string description, IInventory<IItem>[] inventories)
+        /// <param name="description">Description of the Guide</param>
+        /// <param name="inventories"><see cref="IInventory{IItem}"/> of the Guide</param>
+        /// <param name="title">Guide title</param>
+        /// <param name="name">Guide name</param>
+        /// <remarks>Defines a new Guide with name, title, and description</remarks>
+        public Guide(string name, string title, string description, IInventory<IItem>[] inventories)
         {
             __name = name;
             __title = title;
@@ -47,24 +47,24 @@ namespace DarkHouse.Characters
         }
 
         /// <summary>
-        /// Player name
+        /// Guide name
         /// </summary>
         /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the Player name</remarks>
+        /// <remarks>Get or set the Guide name</remarks>
         public string Name { get => __name; }
 
         /// <summary>
-        /// Player title
+        /// Guide title
         /// </summary>
         /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the Player title</remarks>
+        /// <remarks>Get or set the Guide title</remarks>
         public string Title { get => __title; set => __title = value; }
 
         /// <summary>
-        /// Player description
+        /// Guide description
         /// </summary>
         /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the Player description</remarks>
+        /// <remarks>Get or set the Guide description</remarks>
         public string Description { get => __description; set => __description = value; }
 
         /// <summary>

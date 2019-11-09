@@ -4,6 +4,9 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
+using System;
+using DarkHouse.Inventory;
+
 namespace DarkHouse.Characters
 {
     /// <summary>
@@ -27,10 +30,17 @@ namespace DarkHouse.Characters
         string Title { get; set; }
 
         /// <summary>
-        /// Item description
+        /// Character description
         /// </summary>
         /// <returns><see cref="string"/></returns>
         /// <remarks>Get or set the character tag</remarks>
         string Description { get; set; }
+
+        /// <summary>
+        /// Character inventories
+        /// </summary>
+        /// <returns><see cref="string"/></returns>
+        /// <remarks>Get the character inventories</remarks>
+        Array Inventories { get; }
     }
 }
