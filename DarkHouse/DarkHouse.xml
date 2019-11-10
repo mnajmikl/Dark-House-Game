@@ -593,6 +593,13 @@
             <returns><see cref="T:System.String"/></returns>
             <remarks>Returns a shape name</remarks>
         </member>
+        <member name="P:DarkHouse.Shapes.IShape.SidesCount">
+            <summary>
+            Number of sides for a shape
+            </summary>
+            <returns><see cref="T:System.Int32"/></returns>
+            <remarks>Returns the number of sides</remarks>
+        </member>
         <member name="M:DarkHouse.Shapes.IShape.Perimeter">
             <summary>
             Perimeter of a shape
@@ -602,10 +609,10 @@
         </member>
         <member name="M:DarkHouse.Shapes.IShape.Area">
             <summary>
-            Get the area for a shape
+            Area of a shape
             </summary>
             <returns><see cref="T:System.Single"/></returns>
-            <remarks>Each individual shape will need to implement this method with their unique formulation</remarks>
+            <remarks>Returns the surface area of a shape</remarks>
         </member>
         <member name="T:DarkHouse.Shapes.IShape2D">
             <summary>
@@ -615,34 +622,34 @@
         </member>
         <member name="P:DarkHouse.Shapes.IShape2D.Sides">
             <summary>
-            Sides for a shape
+            Sides for a 2D shape
             </summary>
             <returns>Array of <see cref="T:DarkHouse.Shapes.Side"/></returns>
-            <remarks>Returns the sides (array of <see cref="T:DarkHouse.Shapes.Side"/>) for a shape</remarks>
+            <remarks>Returns the sides (array of <see cref="T:DarkHouse.Shapes.Side"/>) for a 2D shape</remarks>
         </member>
         <member name="P:DarkHouse.Shapes.IShape2D.Angles">
             <summary>
-            Angles for a pair of sides
+            Angles for a pair of 2D sides
             </summary>
             <returns>Array of <see cref="T:System.Single"/></returns>
             <remarks>
-            Returns the angles for a shape.
+            Returns the angles for a 2D shape.
             Total of angles must be 360 degrees.
             Angles count counter clockwise from bottom-most left-most point.
             </remarks>
-        </member>
-        <member name="P:DarkHouse.Shapes.IShape2D.SidesCount">
-            <summary>
-            Number of sides for a shape
-            </summary>
-            <returns><see cref="T:System.Int32"/></returns>
-            <remarks>Returns the number of sides</remarks>
         </member>
         <member name="T:DarkHouse.Shapes.IShape3D">
             <summary>
             IShape3D Interface
             </summary>
             <remarks>Defines a three dimensional shape (3D shape)</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.IShape3D.Sides">
+            <summary>
+            Sides for a 3D shape
+            </summary>
+            <returns>Array of <see cref="T:DarkHouse.Shapes.Side3D"/></returns>
+            <remarks>Returns the sides (array of <see cref="T:DarkHouse.Shapes.Side3D"/>) for a 3D shape</remarks>
         </member>
         <member name="P:DarkHouse.Shapes.IShape3D.EdgesCount">
             <summary>
@@ -663,7 +670,7 @@
             Get the volume for a shape
             </summary>
             <returns><see cref="T:System.Single"/></returns>
-            <remarks>Each individual shape will need to implement this method with their unique formulation</remarks>
+            <remarks>Returns the volume of a 3D shape</remarks>
         </member>
         <member name="T:DarkHouse.Shapes.ISpace">
             <summary>
@@ -671,11 +678,11 @@
             </summary>
             <remarks>Defines a space</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.ISpace.RootPoint">
+        <member name="P:DarkHouse.Shapes.ISpace.OriginPoint">
             <summary>
-            The initial coordinate point for a space
+            The initial coordinate point for a space. It is always (0,0)
             </summary>
-            <remarks>Defines the root coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
+            <remarks>Returns the origin point  coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
         </member>
         <member name="T:DarkHouse.Shapes.ISpace2D">
             <summary>
@@ -683,17 +690,17 @@
             </summary>
             <remarks>Defines a 2D space</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.ISpace2D.CoordinateX">
+        <member name="P:DarkHouse.Shapes.ISpace2D.XAxis">
             <summary>
-            The X coordinate point for a space
+            The X axis point for a space. Acceptable value is (0,X). X must larger than 0.
             </summary>
-            <remarks>Defines the X coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
+            <remarks>Returns the X coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.ISpace2D.CoordinateY">
+        <member name="P:DarkHouse.Shapes.ISpace2D.YAxis">
             <summary>
-            The Y coordinate point for a space
+            The Y axis point for a space. Acceptable value is (0,Y). Y must larger than 0.
             </summary>
-            <remarks>Defines the Y coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
+            <remarks>Returns the Y coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
         </member>
         <member name="T:DarkHouse.Shapes.ISpace3D">
             <summary>
@@ -701,11 +708,75 @@
             </summary>
             <remarks>Defines a 3D space</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.ISpace3D.CoordinateZ">
+        <member name="P:DarkHouse.Shapes.ISpace3D.ZAxis">
             <summary>
-            The Z coordinate point for a space
+            The Z axis point for a space. Acceptable value is (0,Z). Z must larger than 0.
             </summary>
-            <remarks>Defines the Y coordinate for a 3D space using a <see cref="T:System.Drawing.PointF" /></remarks>
+            <remarks>Returns the Y coordinate for a 3D space using a <see cref="T:System.Drawing.PointF" /></remarks>
+        </member>
+        <member name="T:DarkHouse.Shapes.PointF3D">
+            <summary>
+            PointF3D Struct
+            </summary>
+            <remarks>Defines a 3D point in float values</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.PointF3D.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+            Constructor of a PointF3D
+            </summary>
+            <param name="x">X axis point</param>
+            <param name="y">Y axis point</param>
+            <param name="z">Z axis point</param>
+            <remarks>Defines a new PointF3D with a given X, Y, and Z points</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.PointF3D.X">
+            <summary>
+            X axis point for a PointF3D
+            </summary>
+            <returns><see cref="T:System.Single"/></returns>
+            <remarks>Returns the X axis point</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.PointF3D.Y">
+            <summary>
+            Y axis point for a PointF3D
+            </summary>
+            <returns><see cref="T:System.Single"/></returns>
+            <remarks>Returns the Y axis point</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.PointF3D.Z">
+            <summary>
+            Z axis point for a PointF3D
+            </summary>
+            <returns><see cref="T:System.Single"/></returns>
+            <remarks>Returns the Z axis point</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.PointF3D.Equals(System.Object)">
+            <summary>
+            Overrides base Object Equals() method
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>Returns true if the compared object is a <see cref="T:DarkHouse.Shapes.PointF3D"/> and all the X/Y/Z points are equal</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.PointF3D.GetHashCode">
+            <summary>
+            Overrides base Object GetHashCode() method
+            </summary>
+            <returns><see cref="T:System.Int32"/></returns>
+            <remarks>Returns the AND values for the object and its X/Y/Z GetHashCode()</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.PointF3D.op_Equality(DarkHouse.Shapes.PointF3D,DarkHouse.Shapes.PointF3D)">
+            <summary>
+            Operator == for <see cref="T:DarkHouse.Shapes.PointF3D"/>
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>Returns true if the compared <see cref="T:DarkHouse.Shapes.PointF3D"/> has all equal X/Y/Z point values</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.PointF3D.op_Inequality(DarkHouse.Shapes.PointF3D,DarkHouse.Shapes.PointF3D)">
+            <summary>
+            Operator != for <see cref="T:DarkHouse.Shapes.PointF3D"/>
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>Returns true if the compared <see cref="T:DarkHouse.Shapes.PointF3D"/> object has at least one unequal value for their X/Y/Z points</remarks>
         </member>
         <member name="T:DarkHouse.Shapes.Side">
             <summary>
@@ -713,35 +784,125 @@
             </summary>
             <remarks>Defines side of a shape</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side.#ctor(System.Single,System.Drawing.PointF,System.Drawing.PointF)">
+        <member name="M:DarkHouse.Shapes.Side.#ctor(System.Drawing.PointF,System.Drawing.PointF)">
             <summary>
             Constructor of a Side
             </summary>
-            <param name="length">Value of the Length <see cref="T:System.Single"/></param>
             <param name="pointA">First side point</param>
             <param name="pointB">Second side point</param>
             <remarks>Defines a new side with a given length</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.Side.Length">
+        <member name="M:DarkHouse.Shapes.Side.Length">
             <summary>
-            Length of a side
+            Distance or length of a <see cref="T:DarkHouse.Shapes.Side"/>
             </summary>
             <returns><see cref="T:System.Single"/></returns>
-            <remarks>Get the length of a side</remarks>
+            <remarks>Returns the distance or length of a <see cref="T:DarkHouse.Shapes.Side"/></remarks>
         </member>
         <member name="P:DarkHouse.Shapes.Side.PointA">
             <summary>
-            First point of a side
+            Distance or length of a <see cref="T:DarkHouse.Shapes.Side"/>
             </summary>
             <returns><see cref="T:System.Drawing.PointF"/></returns>
-            <remarks>Get the first point of a side</remarks>
+            <remarks>Returns the first point of a side for 2D shape</remarks>
         </member>
         <member name="P:DarkHouse.Shapes.Side.PointB">
             <summary>
             Second point of a side
             </summary>
             <returns><see cref="T:System.Drawing.PointF"/></returns>
-            <remarks>Get the second point of a side</remarks>
+            <remarks>Returns the second point of a side for 2D shape</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.Side.Equals(System.Object)">
+            <summary>
+            Overrides base Object Equals() method
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>Returns true if the compared object is a <see cref="T:DarkHouse.Shapes.Side"/> and all the PointA and PointB are equal</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.Side.GetHashCode">
+            <summary>
+            Overrides base Object GetHashCode() method
+            </summary>
+            <returns><see cref="T:System.Int32"/></returns>
+            <remarks>Returns the AND values for the object and its __pointA and __pointB GetHashCode()</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.Side.op_Equality(DarkHouse.Shapes.Side,DarkHouse.Shapes.Side)">
+            <summary>
+            Operator == for <see cref="T:DarkHouse.Shapes.Side"/>
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>Returns true if the compared <see cref="T:DarkHouse.Shapes.Side"/> has all equal PointA and PointB values</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.Side.op_Inequality(DarkHouse.Shapes.Side,DarkHouse.Shapes.Side)">
+            <summary>
+            Operator != for <see cref="T:DarkHouse.Shapes.Side"/>
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>Returns true if the compared <see cref="T:DarkHouse.Shapes.Side"/> object has at least one unequal value for their PointA and PointB values</remarks>
+        </member>
+        <member name="T:DarkHouse.Shapes.Side3D">
+            <summary>
+            Side struct
+            </summary>
+            <remarks>Defines side of a shape</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.Side3D.#ctor(DarkHouse.Shapes.PointF3D,DarkHouse.Shapes.PointF3D)">
+            <summary>
+            Constructor of a Side3D
+            </summary>
+            <param name="pointA">First side point</param>
+            <param name="pointB">Second side point</param>
+            <remarks>Defines a new side with a given length</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.Side3D.Length">
+            <summary>
+            Distance or length of a <see cref="T:DarkHouse.Shapes.Side3D"/>
+            </summary>
+            <returns><see cref="T:System.Single"/></returns>
+            <remarks>Returns the distance or length of a <see cref="T:DarkHouse.Shapes.Side3D"/></remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.Side3D.PointA">
+            <summary>
+            First point of a side
+            </summary>
+            <returns><see cref="T:System.Drawing.PointF"/></returns>
+            <remarks>Returns the first point of a side for 3D shape</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.Side3D.PointB">
+            <summary>
+            Second point of a side
+            </summary>
+            <returns><see cref="T:System.Drawing.PointF"/></returns>
+            <remarks>Returns the second point of a side for 3D shape</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.Side3D.Equals(System.Object)">
+            <summary>
+            Overrides base Object Equals() method
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>Returns true if the compared object is a <see cref="T:DarkHouse.Shapes.Side"/> and all the PointA and PointB are equal</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.Side3D.GetHashCode">
+            <summary>
+            Overrides base Object GetHashCode() method
+            </summary>
+            <returns><see cref="T:System.Int32"/></returns>
+            <remarks>Returns the AND values for the object and its __pointA and __pointB GetHashCode()</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.Side3D.op_Equality(DarkHouse.Shapes.Side3D,DarkHouse.Shapes.Side3D)">
+            <summary>
+            Operator == for <see cref="T:DarkHouse.Shapes.Side"/>
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>Returns true if the compared <see cref="T:DarkHouse.Shapes.Side"/> has all equal PointA and PointB values</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.Side3D.op_Inequality(DarkHouse.Shapes.Side3D,DarkHouse.Shapes.Side3D)">
+            <summary>
+            Operator != for <see cref="T:DarkHouse.Shapes.Side"/>
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>Returns true if the compared <see cref="T:DarkHouse.Shapes.Side"/> object has at least one unequal value for their PointA and PointB values</remarks>
         </member>
     </members>
 </doc>
