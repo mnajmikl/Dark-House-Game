@@ -580,19 +580,6 @@
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the item tag</remarks>
         </member>
-        <member name="T:DarkHouse.Shapes.IArea">
-            <summary>
-            IArea Interface
-            </summary>
-            <remarks>Defines area of a shape</remarks>
-        </member>
-        <member name="M:DarkHouse.Shapes.IArea.Area">
-            <summary>
-            Get the area for a shape
-            </summary>
-            <returns><see cref="T:System.Single"/></returns>
-            <remarks>Each individual shape will need to implement this method with their unique formulation</remarks>
-        </member>
         <member name="T:DarkHouse.Shapes.IShape">
             <summary>
             IShape Interface
@@ -606,14 +593,34 @@
             <returns><see cref="T:System.String"/></returns>
             <remarks>Returns a shape name</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.IShape.Sides">
+        <member name="M:DarkHouse.Shapes.IShape.Perimeter">
+            <summary>
+            Perimeter of a shape
+            </summary>
+            <returns><see cref="T:System.Single"/></returns>
+            <remarks>Returns the total perimeter of a shape</remarks>
+        </member>
+        <member name="M:DarkHouse.Shapes.IShape.Area">
+            <summary>
+            Get the area for a shape
+            </summary>
+            <returns><see cref="T:System.Single"/></returns>
+            <remarks>Each individual shape will need to implement this method with their unique formulation</remarks>
+        </member>
+        <member name="T:DarkHouse.Shapes.IShape2D">
+            <summary>
+            IShape2D Interface
+            </summary>
+            <remarks>Defines a two dimensional shape (2D shape)</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.IShape2D.Sides">
             <summary>
             Sides for a shape
             </summary>
             <returns>Array of <see cref="T:DarkHouse.Shapes.Side"/></returns>
             <remarks>Returns the sides (array of <see cref="T:DarkHouse.Shapes.Side"/>) for a shape</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.IShape.Angles">
+        <member name="P:DarkHouse.Shapes.IShape2D.Angles">
             <summary>
             Angles for a pair of sides
             </summary>
@@ -624,25 +631,12 @@
             Angles count counter clockwise from bottom-most left-most point.
             </remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.IShape.Perimeter">
-            <summary>
-            Perimeter of a shape
-            </summary>
-            <returns><see cref="T:System.Single"/></returns>
-            <remarks>Returns the total perimeter of a shape</remarks>
-        </member>
-        <member name="P:DarkHouse.Shapes.IShape.SidesCount">
+        <member name="P:DarkHouse.Shapes.IShape2D.SidesCount">
             <summary>
             Number of sides for a shape
             </summary>
             <returns><see cref="T:System.Int32"/></returns>
             <remarks>Returns the number of sides</remarks>
-        </member>
-        <member name="T:DarkHouse.Shapes.IShape2D">
-            <summary>
-            IShape2D Interface
-            </summary>
-            <remarks>Defines a two dimensional shape (2D shape)</remarks>
         </member>
         <member name="T:DarkHouse.Shapes.IShape3D">
             <summary>
@@ -664,6 +658,13 @@
             <returns><see cref="T:System.Int32"/></returns>
             <remarks>Returns the number of vertices for a 3D shape</remarks>
         </member>
+        <member name="M:DarkHouse.Shapes.IShape3D.Volume">
+            <summary>
+            Get the volume for a shape
+            </summary>
+            <returns><see cref="T:System.Single"/></returns>
+            <remarks>Each individual shape will need to implement this method with their unique formulation</remarks>
+        </member>
         <member name="T:DarkHouse.Shapes.ISpace">
             <summary>
             ISpace Interface
@@ -676,23 +677,23 @@
             </summary>
             <remarks>Defines the root coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.ISpace.CoordinateX">
-            <summary>
-            The X coordinate point for a space
-            </summary>
-            <remarks>Defines the X coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
-        </member>
-        <member name="P:DarkHouse.Shapes.ISpace.CoordinateY">
-            <summary>
-            The Y coordinate point for a space
-            </summary>
-            <remarks>Defines the Y coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
-        </member>
         <member name="T:DarkHouse.Shapes.ISpace2D">
             <summary>
             ISpace2D Interface
             </summary>
             <remarks>Defines a 2D space</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.ISpace2D.CoordinateX">
+            <summary>
+            The X coordinate point for a space
+            </summary>
+            <remarks>Defines the X coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.ISpace2D.CoordinateY">
+            <summary>
+            The Y coordinate point for a space
+            </summary>
+            <remarks>Defines the Y coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
         </member>
         <member name="T:DarkHouse.Shapes.ISpace3D">
             <summary>
@@ -705,19 +706,6 @@
             The Z coordinate point for a space
             </summary>
             <remarks>Defines the Y coordinate for a 3D space using a <see cref="T:System.Drawing.PointF" /></remarks>
-        </member>
-        <member name="T:DarkHouse.Shapes.IVolume">
-            <summary>
-            IVolume Interface
-            </summary>
-            <remarks>Defines volume of a shape</remarks>
-        </member>
-        <member name="M:DarkHouse.Shapes.IVolume.Volume">
-            <summary>
-            Get the volume for a shape
-            </summary>
-            <returns><see cref="T:System.Single"/></returns>
-            <remarks>Each individual shape will need to implement this method with their unique formulation</remarks>
         </member>
         <member name="T:DarkHouse.Shapes.Side">
             <summary>
