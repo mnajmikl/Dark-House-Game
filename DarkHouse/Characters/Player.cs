@@ -13,7 +13,7 @@ namespace DarkHouse.Characters
     /// Class Player
     /// </summary>
     /// <remarks>Defines a game player</remarks>
-    public class Player : ICharacter
+    public partial class Player : ICharacter
     {
         // private class members
         private string __name;

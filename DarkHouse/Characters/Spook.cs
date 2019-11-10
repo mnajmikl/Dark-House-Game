@@ -13,7 +13,7 @@ namespace DarkHouse.Characters
     /// Class Spook
     /// </summary>
     /// <remarks>Defines a game Spook</remarks>
-    public class Spook : ICharacter
+    public partial class Spook : ICharacter
     {
         // private class members
         private string __name;

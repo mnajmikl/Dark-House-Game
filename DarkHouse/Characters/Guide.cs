@@ -12,7 +12,7 @@ namespace DarkHouse.Characters
     /// Class Guide
     /// </summary>
     /// <remarks>Defines a game Guide</remarks>
-    public class Guide : ICharacter
+    public partial class Guide : ICharacter
     {
         // private class members
         private string __name;
