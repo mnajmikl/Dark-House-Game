@@ -19,17 +19,17 @@ namespace DarkHouse.Characters
         private string __name;
         private string __title;
         private string __description;
-        private IInventory<IItem>[] __inventories;
+        private IInventory[] __inventories;
 
         /// <summary>
         /// Constructor of a Player
         /// </summary>
         /// <param name="description">Description of the Player</param>
-        /// <param name="inventories"><see cref="IInventory{IItem}"/> of the Player</param>
+        /// <param name="inventories"><see cref="IInventory"/> of the Player</param>
         /// <param name="title">Player title</param>
         /// <param name="name">Player name</param>
         /// <remarks>Defines a new Player with name, title, and description</remarks>
-        public Player(string name, string title, string description, IInventory<IItem>[] inventories)
+        public Player(string name, string title, string description, IInventory[] inventories)
         {
             __name = name;
             __title = title;
@@ -37,12 +37,12 @@ namespace DarkHouse.Characters
 
             if (inventories != null && inventories.Length > 0)
             {
-                __inventories = new IInventory<IItem>[inventories.Length];
+                __inventories = new IInventory[inventories.Length];
                 inventories.CopyTo(__inventories, 0);
             }
             else
             {
-                __inventories = new IInventory<IItem>[1];
+                __inventories = new IInventory[1];
             }
         }
 
@@ -70,8 +70,8 @@ namespace DarkHouse.Characters
         /// <summary>
         /// Player inventories
         /// </summary>
-        /// <returns>Array of <see cref="IInventory{IItem}"/></returns>
+        /// <returns>Array of <see cref="IInventory"/></returns>
         /// <remarks>Get the Player inventories</remarks>
-        public IInventory<IItem>[] Inventories { get => __inventories; }
+        public IInventory[] Inventories { get => __inventories; }
     }
 }

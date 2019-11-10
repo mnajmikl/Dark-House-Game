@@ -19,17 +19,17 @@ namespace DarkHouse.Characters
         private string __name;
         private string __title;
         private string __description;
-        private IInventory<IItem>[] __inventories;
+        private IInventory[] __inventories;
 
         /// <summary>
         /// Constructor of a Spook
         /// </summary>
         /// <param name="description">Description of the Spook</param>
-        /// <param name="inventories"><see cref="IInventory{IItem}"/> of the Spook</param>
+        /// <param name="inventories"><see cref="IInventory"/> of the Spook</param>
         /// <param name="title">Spook title</param>
         /// <param name="name">Spook display name</param>
         /// <remarks>Defines a new Spook with name, title, and description</remarks>
-        public Spook(string name, string title, string description, IInventory<IItem>[] inventories)
+        public Spook(string name, string title, string description, IInventory[] inventories)
         {
             __name = name;
             __title = title;
@@ -37,12 +37,12 @@ namespace DarkHouse.Characters
 
             if (inventories != null && inventories.Length > 0)
             {
-                __inventories = new IInventory<IItem>[inventories.Length];
+                __inventories = new IInventory[inventories.Length];
                 inventories.CopyTo(__inventories, 0);
             }
             else
             {
-                __inventories = new IInventory<IItem>[1];
+                __inventories = new IInventory[1];
             }
         }
 
@@ -71,8 +71,8 @@ namespace DarkHouse.Characters
         /// <summary>
         /// Spook inventories
         /// </summary>
-        /// <returns>Array of <see cref="IInventory{IItem}"/></returns>
+        /// <returns>Array of <see cref="IInventory"/></returns>
         /// <remarks>Get the Spook inventories</remarks>
-        public IInventory<IItem>[] Inventories { get => __inventories; }
+        public IInventory[] Inventories { get => __inventories; }
     }
 }
