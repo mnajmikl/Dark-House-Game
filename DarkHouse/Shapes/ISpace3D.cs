@@ -12,7 +12,7 @@ namespace DarkHouse.Shapes
     /// ISpace3D Interface
     /// </summary>
     /// <remarks>Defines a 3D space</remarks>
-    public interface ISpace3D : ISpace, IShape3D
+    public interface ISpace3D : ISpace, IShape2D
     {
         /// <summary>
         /// The Z coordinate point for a space
