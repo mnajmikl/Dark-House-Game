@@ -44,16 +44,8 @@ namespace DarkHouse.Games
                 players.CopyTo(__players, players.Length - 1);
             else
             {
-                // Default to 10 characters
-                __players = new ICharacter[10];
-                // First character is a player
-                //__players[1] = new Player();
-                // Three Guides
-                //__player[2] = new Guide();
-                // Six Spooks
-                // __player[5] = new Spook();
-            }
-                
+                CreateSession();
+            }       
         }
 
         /// <summary>
