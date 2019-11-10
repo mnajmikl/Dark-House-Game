@@ -12,7 +12,7 @@ namespace DarkHouse.Inventory
     /// IInventory Interface
     /// </summary>
     /// <remarks>Defines area of an inventory</remarks>
-    public interface IInventory<IItem>
+    public interface IInventory
     {
         /// <summary>
         /// Inventory name
@@ -60,7 +60,7 @@ namespace DarkHouse.Inventory
         /// Get item from an inventory
         /// </summary>
         /// <param name="index">Index of item to search</param>
-        /// <returns><typeparamref name="IItem" /></returns>
+        /// <returns><see cref="IItem" /></returns>
         /// <remarks>Get the inventory item at the selected index <paramref name="index"/></remarks>
         IItem GetItem(int index);
 
@@ -68,7 +68,7 @@ namespace DarkHouse.Inventory
         /// Get item(s) from an inventory
         /// </summary>
         /// <param name="itemName">Item name to search</param>
-        /// <returns>Array of <typeparamref name="IItem" /></returns>
+        /// <returns>Array of <see cref="IItem" /></returns>
         /// <remarks>Get item(s) from the inventory using item name <paramref name="itemName"/></remarks>
         IItem[] GetItems(string itemName);
     }
