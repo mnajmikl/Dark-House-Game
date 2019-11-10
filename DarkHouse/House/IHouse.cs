@@ -25,8 +25,8 @@ namespace DarkHouse.House
         /// <summary>
         /// House inventories
         /// </summary>
-        /// <returns>Array of <see cref="IInventory"/></returns>
+        /// <returns>Array of <see cref="IInventory{IItem}"/></returns>
         /// <remarks>Get the House inventories</remarks>
-        public IInventory[] Inventories { get; }
+        public IInventory<IItem>[] Inventories { get; }
     }
 }
