@@ -631,31 +631,24 @@
             <returns><see cref="T:System.Single"/></returns>
             <remarks>Returns the total perimeter of a shape</remarks>
         </member>
-        <member name="T:DarkHouse.Shapes.IShape2D">
-            <summary>
-            IShape2D Interface
-            </summary>
-            <remarks>Defines a two dimensional shape (2D shape)</remarks>
-        </member>
-        <member name="P:DarkHouse.Shapes.IShape2D.SidesCount">
+        <member name="P:DarkHouse.Shapes.IShape.SidesCount">
             <summary>
             Number of sides for a shape
             </summary>
             <returns><see cref="T:System.Int32"/></returns>
             <remarks>Returns the number of sides</remarks>
         </member>
+        <member name="T:DarkHouse.Shapes.IShape2D">
+            <summary>
+            IShape2D Interface
+            </summary>
+            <remarks>Defines a two dimensional shape (2D shape)</remarks>
+        </member>
         <member name="T:DarkHouse.Shapes.IShape3D">
             <summary>
             IShape3D Interface
             </summary>
             <remarks>Defines a three dimensional shape (3D shape)</remarks>
-        </member>
-        <member name="P:DarkHouse.Shapes.IShape3D.SidesCount">
-            <summary>
-            Get the number of sides of a 3D shape
-            </summary>
-            <returns><see cref="T:System.Int32"/></returns>
-            <remarks>Returns the number of faces for a 3D shape</remarks>
         </member>
         <member name="P:DarkHouse.Shapes.IShape3D.EdgesCount">
             <summary>
@@ -677,11 +670,23 @@
             </summary>
             <remarks>Defines a space</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.ISpace.InitialPoint">
+        <member name="P:DarkHouse.Shapes.ISpace.RootPoint">
             <summary>
-            Get or set the initial coordinate for a space
+            The initial coordinate point for a space
             </summary>
-            <remarks>Defines the initial coordinate for a space using a Point struct</remarks>
+            <remarks>Defines the root coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.ISpace.CoordinateX">
+            <summary>
+            The X coordinate point for a space
+            </summary>
+            <remarks>Defines the X coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.ISpace.CoordinateY">
+            <summary>
+            The Y coordinate point for a space
+            </summary>
+            <remarks>Defines the Y coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
         </member>
         <member name="T:DarkHouse.Shapes.ISpace2D">
             <summary>
@@ -694,6 +699,12 @@
             ISpace3D Interface
             </summary>
             <remarks>Defines a 3D space</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.ISpace3D.CoordinateZ">
+            <summary>
+            The Z coordinate point for a space
+            </summary>
+            <remarks>Defines the Y coordinate for a 3D space using a <see cref="T:System.Drawing.PointF" /></remarks>
         </member>
         <member name="T:DarkHouse.Shapes.IVolume">
             <summary>
@@ -714,11 +725,13 @@
             </summary>
             <remarks>Defines side of a shape</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side.#ctor(System.Single)">
+        <member name="M:DarkHouse.Shapes.Side.#ctor(System.Single,System.Drawing.PointF,System.Drawing.PointF)">
             <summary>
             Constructor of a Side
             </summary>
             <param name="length">Value of the Length <see cref="T:System.Single"/></param>
+            <param name="pointA">First side point</param>
+            <param name="pointB">Second side point</param>
             <remarks>Defines a new side with a given length</remarks>
         </member>
         <member name="P:DarkHouse.Shapes.Side.Length">
@@ -726,7 +739,21 @@
             Length of a side
             </summary>
             <returns><see cref="T:System.Single"/></returns>
-            <remarks>Get or set the length of a side</remarks>
+            <remarks>Get the length of a side</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.Side.PointA">
+            <summary>
+            First point of a side
+            </summary>
+            <returns><see cref="T:System.Drawing.PointF"/></returns>
+            <remarks>Get the first point of a side</remarks>
+        </member>
+        <member name="P:DarkHouse.Shapes.Side.PointB">
+            <summary>
+            Second point of a side
+            </summary>
+            <returns><see cref="T:System.Drawing.PointF"/></returns>
+            <remarks>Get the second point of a side</remarks>
         </member>
     </members>
 </doc>
