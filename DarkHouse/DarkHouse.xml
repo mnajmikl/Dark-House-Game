@@ -126,12 +126,12 @@
             </summary>
             <remarks>Defines a game Guide</remarks>
         </member>
-        <member name="M:DarkHouse.Characters.Guide.#ctor(System.String,System.String,System.String,DarkHouse.Inventory.IInventory{DarkHouse.Inventory.IItem}[])">
+        <member name="M:DarkHouse.Characters.Guide.#ctor(System.String,System.String,System.String,DarkHouse.Inventory.IInventory[])">
             <summary>
             Constructor of a Guide
             </summary>
             <param name="description">Description of the Guide</param>
-            <param name="inventories"><see cref="T:DarkHouse.Inventory.IInventory`1"/> of the Guide</param>
+            <param name="inventories"><see cref="T:DarkHouse.Inventory.IInventory"/> of the Guide</param>
             <param name="title">Guide title</param>
             <param name="name">Guide name</param>
             <remarks>Defines a new Guide with name, title, and description</remarks>
@@ -161,7 +161,7 @@
             <summary>
             Guide inventories
             </summary>
-            <returns><see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
+            <returns><see cref="T:DarkHouse.Inventory.IInventory"/></returns>
             <remarks>Get the Guide inventories</remarks>
         </member>
         <member name="T:DarkHouse.Characters.ICharacter">
@@ -195,7 +195,7 @@
             <summary>
             Character inventories
             </summary>
-            <returns><see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
+            <returns><see cref="T:DarkHouse.Inventory.IInventory"/></returns>
             <remarks>Get the character inventories</remarks>
         </member>
         <member name="T:DarkHouse.Characters.Player">
@@ -204,12 +204,12 @@
             </summary>
             <remarks>Defines a game player</remarks>
         </member>
-        <member name="M:DarkHouse.Characters.Player.#ctor(System.String,System.String,System.String,DarkHouse.Inventory.IInventory{DarkHouse.Inventory.IItem}[])">
+        <member name="M:DarkHouse.Characters.Player.#ctor(System.String,System.String,System.String,DarkHouse.Inventory.IInventory[])">
             <summary>
             Constructor of a Player
             </summary>
             <param name="description">Description of the Player</param>
-            <param name="inventories"><see cref="T:DarkHouse.Inventory.IInventory`1"/> of the Player</param>
+            <param name="inventories"><see cref="T:DarkHouse.Inventory.IInventory"/> of the Player</param>
             <param name="title">Player title</param>
             <param name="name">Player name</param>
             <remarks>Defines a new Player with name, title, and description</remarks>
@@ -239,7 +239,7 @@
             <summary>
             Player inventories
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
+            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory"/></returns>
             <remarks>Get the Player inventories</remarks>
         </member>
         <member name="T:DarkHouse.Characters.Spook">
@@ -248,12 +248,12 @@
             </summary>
             <remarks>Defines a game Spook</remarks>
         </member>
-        <member name="M:DarkHouse.Characters.Spook.#ctor(System.String,System.String,System.String,DarkHouse.Inventory.IInventory{DarkHouse.Inventory.IItem}[])">
+        <member name="M:DarkHouse.Characters.Spook.#ctor(System.String,System.String,System.String,DarkHouse.Inventory.IInventory[])">
             <summary>
             Constructor of a Spook
             </summary>
             <param name="description">Description of the Spook</param>
-            <param name="inventories"><see cref="T:DarkHouse.Inventory.IInventory`1"/> of the Spook</param>
+            <param name="inventories"><see cref="T:DarkHouse.Inventory.IInventory"/> of the Spook</param>
             <param name="title">Spook title</param>
             <param name="name">Spook display name</param>
             <remarks>Defines a new Spook with name, title, and description</remarks>
@@ -283,7 +283,7 @@
             <summary>
             Spook inventories
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
+            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory"/></returns>
             <remarks>Get the Spook inventories</remarks>
         </member>
         <member name="T:DarkHouse.Enums.MeasurementUnits">
@@ -394,7 +394,7 @@
             <summary>
             Floor inventories
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
+            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory"/></returns>
             <remarks>Get the Floor inventories</remarks>
         </member>
         <member name="T:DarkHouse.House.IHouse">
@@ -414,7 +414,7 @@
             <summary>
             House inventories
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
+            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory"/></returns>
             <remarks>Get the House inventories</remarks>
         </member>
         <member name="T:DarkHouse.House.IHousePart">
@@ -480,7 +480,7 @@
             <summary>
             Room inventories
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory`1"/></returns>
+            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory"/></returns>
             <remarks>Get the Room inventories</remarks>
         </member>
         <member name="T:DarkHouse.House.IWindow">
@@ -489,68 +489,68 @@
             </summary>
             <remarks>Defines a window</remarks>
         </member>
-        <member name="T:DarkHouse.Inventory.IInventory`1">
+        <member name="T:DarkHouse.Inventory.IInventory">
             <summary>
             IInventory Interface
             </summary>
             <remarks>Defines area of an inventory</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.IInventory`1.Name">
+        <member name="P:DarkHouse.Inventory.IInventory.Name">
             <summary>
             Inventory name
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the inventory name</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.IInventory`1.Tag">
+        <member name="P:DarkHouse.Inventory.IInventory.Tag">
             <summary>
             Inventory tag
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the inventory tag</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.IInventory`1.Description">
+        <member name="P:DarkHouse.Inventory.IInventory.Description">
             <summary>
             Inventory description
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the inventory tag</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.IInventory`1.Add(`0)">
+        <member name="M:DarkHouse.Inventory.IInventory.Add(DarkHouse.Inventory.IItem)">
             <summary>
             Add item to the inventory
             </summary>
             <param name="item">Item to add</param>
             <remarks>Add an item to the inventory</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.IInventory`1.Remove(System.Int32)">
+        <member name="M:DarkHouse.Inventory.IInventory.Remove(System.Int32)">
             <summary>
             Remove item from an inventory
             </summary>
             <param name="index">Index of item to remove</param>
             <remarks>Search and remove item from the inventory at the selected index <paramref name="index"/></remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.IInventory`1.Remove(System.String)">
+        <member name="M:DarkHouse.Inventory.IInventory.Remove(System.String)">
             <summary>
             Remove item(s) from an inventory
             </summary>
             <param name="itemName">Item name to remove</param>
             <remarks>Search and remove item(s) from the inventory using item name <paramref name="itemName"/></remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.IInventory`1.GetItem(System.Int32)">
+        <member name="M:DarkHouse.Inventory.IInventory.GetItem(System.Int32)">
             <summary>
             Get item from an inventory
             </summary>
             <param name="index">Index of item to search</param>
-            <returns><typeparamref name="IItem" /></returns>
+            <returns><see cref="T:DarkHouse.Inventory.IItem" /></returns>
             <remarks>Get the inventory item at the selected index <paramref name="index"/></remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.IInventory`1.GetItems(System.String)">
+        <member name="M:DarkHouse.Inventory.IInventory.GetItems(System.String)">
             <summary>
             Get item(s) from an inventory
             </summary>
             <param name="itemName">Item name to search</param>
-            <returns>Array of <typeparamref name="IItem" /></returns>
+            <returns>Array of <see cref="T:DarkHouse.Inventory.IItem" /></returns>
             <remarks>Get item(s) from the inventory using item name <paramref name="itemName"/></remarks>
         </member>
         <member name="T:DarkHouse.Inventory.IItem">
