@@ -4,6 +4,7 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
+using System.Drawing;
 using System.Collections.Generic;
 
 namespace DarkHouse.Shapes
@@ -14,11 +15,5 @@ namespace DarkHouse.Shapes
     /// <remarks>Defines a two dimensional shape (2D shape)</remarks>
     public interface IShape2D : IShape, IArea
     {
-        /// <summary>
-        /// Number of sides for a shape
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <remarks>Returns the number of sides</remarks>
-        int SidesCount { get; }
     }
 }

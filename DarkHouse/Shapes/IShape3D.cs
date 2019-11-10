@@ -13,13 +13,6 @@ namespace DarkHouse.Shapes
     public interface IShape3D : IShape, IArea, IVolume
     {
         /// <summary>
-        /// Get the number of sides of a 3D shape
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <remarks>Returns the number of faces for a 3D shape</remarks>
-        int SidesCount { get; }
-
-        /// <summary>
         /// Get the number of edges of a 3D shape
         /// </summary>
         /// <returns><see cref="int"/></returns>

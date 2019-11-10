@@ -15,9 +15,21 @@ namespace DarkHouse.Shapes
     public interface ISpace
     {
         /// <summary>
-        /// Get or set the initial coordinate for a space
+        /// The initial coordinate point for a space
         /// </summary>
-        /// <remarks>Defines the initial coordinate for a space using a Point struct</remarks>
-        PointF InitialPoint { set; }
+        /// <remarks>Defines the root coordinate for a space using a <see cref="PointF" /></remarks>
+        PointF RootPoint { get; }
+
+        /// <summary>
+        /// The X coordinate point for a space
+        /// </summary>
+        /// <remarks>Defines the X coordinate for a space using a <see cref="PointF" /></remarks>
+        PointF CoordinateX { set; }
+
+        /// <summary>
+        /// The Y coordinate point for a space
+        /// </summary>
+        /// <remarks>Defines the Y coordinate for a space using a <see cref="PointF" /></remarks>
+        PointF CoordinateY { set; }
     }
 }

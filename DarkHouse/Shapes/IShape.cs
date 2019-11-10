@@ -43,5 +43,12 @@ namespace DarkHouse.Shapes
         /// <returns><see cref="float"/></returns>
         /// <remarks>Returns the total perimeter of a shape</remarks>
         float Perimeter();
+
+        /// <summary>
+        /// Number of sides for a shape
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <remarks>Returns the number of sides</remarks>
+        int SidesCount { get; }
     }
 }
