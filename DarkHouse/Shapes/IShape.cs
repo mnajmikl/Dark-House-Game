@@ -20,6 +20,13 @@ namespace DarkHouse.Shapes
         string Name { get; }
 
         /// <summary>
+        /// Number of sides for a shape
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <remarks>Returns the number of sides</remarks>
+        int SidesCount { get; }
+
+        /// <summary>
         /// Perimeter of a shape
         /// </summary>
         /// <returns><see cref="float"/></returns>
@@ -27,10 +34,10 @@ namespace DarkHouse.Shapes
         float Perimeter();
 
         /// <summary>
-        /// Get the area for a shape
+        /// Area of a shape
         /// </summary>
         /// <returns><see cref="float"/></returns>
-        /// <remarks>Each individual shape will need to implement this method with their unique formulation</remarks>
+        /// <remarks>Returns the surface area of a shape</remarks>
         float Area();
     }
 }

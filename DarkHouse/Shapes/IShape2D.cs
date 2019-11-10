@@ -16,28 +16,21 @@ namespace DarkHouse.Shapes
     public interface IShape2D : IShape
     {
         /// <summary>
-        /// Sides for a shape
+        /// Sides for a 2D shape
         /// </summary>
         /// <returns>Array of <see cref="Side"/></returns>
-        /// <remarks>Returns the sides (array of <see cref="Side"/>) for a shape</remarks>
+        /// <remarks>Returns the sides (array of <see cref="Side"/>) for a 2D shape</remarks>
         Side[] Sides { get; }
 
         /// <summary>
-        /// Angles for a pair of sides
+        /// Angles for a pair of 2D sides
         /// </summary>
         /// <returns>Array of <see cref="float"/></returns>
         /// <remarks>
-        /// Returns the angles for a shape.
+        /// Returns the angles for a 2D shape.
         /// Total of angles must be 360 degrees.
         /// Angles count counter clockwise from bottom-most left-most point.
         /// </remarks>
         float[] Angles { get; }
-
-        /// <summary>
-        /// Number of sides for a shape
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <remarks>Returns the number of sides</remarks>
-        int SidesCount { get; }
     }
 }

@@ -4,14 +4,23 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
+using System.Drawing;
+
 namespace DarkHouse.Shapes
 {
     /// <summary>
     /// IShape3D Interface
     /// </summary>
     /// <remarks>Defines a three dimensional shape (3D shape)</remarks>
-    public interface IShape3D : IShape2D
+    public interface IShape3D : IShape
     {
+        /// <summary>
+        /// Sides for a 3D shape
+        /// </summary>
+        /// <returns>Array of <see cref="Side3D"/></returns>
+        /// <remarks>Returns the sides (array of <see cref="Side3D"/>) for a 3D shape</remarks>
+        Side3D[] Sides { get; }
+
         /// <summary>
         /// Get the number of edges of a 3D shape
         /// </summary>
@@ -30,7 +39,7 @@ namespace DarkHouse.Shapes
         /// Get the volume for a shape
         /// </summary>
         /// <returns><see cref="float"/></returns>
-        /// <remarks>Each individual shape will need to implement this method with their unique formulation</remarks>
+        /// <remarks>Returns the volume of a 3D shape</remarks>
         float Volume();
     }
 }

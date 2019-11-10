@@ -15,9 +15,9 @@ namespace DarkHouse.Shapes
     public interface ISpace
     {
         /// <summary>
-        /// The initial coordinate point for a space
+        /// The initial coordinate point for a space. It is always (0,0)
         /// </summary>
-        /// <remarks>Defines the root coordinate for a space using a <see cref="PointF" /></remarks>
-        PointF RootPoint { get; }
+        /// <remarks>Returns the origin point  coordinate for a space using a <see cref="PointF" /></remarks>
+        PointF OriginPoint { get; }
     }
 }

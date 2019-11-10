@@ -15,15 +15,15 @@ namespace DarkHouse.Shapes
     public interface ISpace2D : ISpace, IShape2D
     {
         /// <summary>
-        /// The X coordinate point for a space
+        /// The X axis point for a space. Acceptable value is (0,X). X must larger than 0.
         /// </summary>
-        /// <remarks>Defines the X coordinate for a space using a <see cref="PointF" /></remarks>
-        PointF CoordinateX { set; }
+        /// <remarks>Returns the X coordinate for a space using a <see cref="PointF" /></remarks>
+        PointF XAxis { get; }
 
         /// <summary>
-        /// The Y coordinate point for a space
+        /// The Y axis point for a space. Acceptable value is (0,Y). Y must larger than 0.
         /// </summary>
-        /// <remarks>Defines the Y coordinate for a space using a <see cref="PointF" /></remarks>
-        PointF CoordinateY { set; }
+        /// <remarks>Returns the Y coordinate for a space using a <see cref="PointF" /></remarks>
+        PointF YAxis { get; }
     }
 }
