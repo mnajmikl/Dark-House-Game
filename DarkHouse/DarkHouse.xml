@@ -489,6 +489,33 @@
             </summary>
             <remarks>Defines a window</remarks>
         </member>
+        <member name="T:DarkHouse.Inventory.HouseHoldItem">
+            <summary>
+            HouseHoldItem Class
+            </summary>
+            <remarks>Define a house hold item</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.HouseHoldItem.Name">
+            <summary>
+            Item name
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the item name</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.HouseHoldItem.Tag">
+            <summary>
+            Item tag
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the item tag</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.HouseHoldItem.Description">
+            <summary>
+            Item description
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the item tag</remarks>
+        </member>
         <member name="T:DarkHouse.Inventory.IInventory">
             <summary>
             IInventory Interface
