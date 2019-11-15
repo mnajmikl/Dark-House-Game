@@ -10,19 +10,19 @@
             </summary>
             <remarks>Defines an lockable object</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.ILockable.IsLocked">
+        <member name="P:DarkHouse.Behaviors.ILockable.IsLocked">
             <summary>
             Determines whether an object is locked
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is locked</remarks>
+            <remarks>Returns true if the object is locked</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.ILockable.IsLockable">
+        <member name="P:DarkHouse.Behaviors.ILockable.IsLockable">
             <summary>
             Determines whether an object can be locked
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object can be locked</remarks>
+            <remarks>Returns <see cref="T:System.Boolean"/> true if the object can be locked</remarks>
         </member>
         <member name="M:DarkHouse.Behaviors.ILockable.Lock">
             <summary>
@@ -51,19 +51,19 @@
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is moving successfully</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.IMoveable.IsMoving">
+        <member name="P:DarkHouse.Behaviors.IMoveable.IsMoving">
             <summary>
             Determines whether the object is currently moving 
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is currently moving</remarks>
+            <remarks>Returns true if the object is currently moving</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.IMoveable.IsMoveable">
+        <member name="P:DarkHouse.Behaviors.IMoveable.IsMoveable">
             <summary>
             Determines whether the object is moveable
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is moveable</remarks>
+            <remarks>Returns true if the object is moveable</remarks>
         </member>
         <member name="M:DarkHouse.Behaviors.IMoveable.Stop">
             <summary>
@@ -72,19 +72,19 @@
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if stopping the object is successful</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.IMoveable.IsStopped">
+        <member name="P:DarkHouse.Behaviors.IMoveable.IsStopped">
             <summary>
             Determines whether an object has been stopped
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object has been stopped</remarks>
+            <remarks>Returns true if the object has been stopped</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.IMoveable.IsStoppable">
+        <member name="P:DarkHouse.Behaviors.IMoveable.IsStoppable">
             <summary>
             Determines whether an object is capable of being stopped
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is capable of being stopped</remarks>
+            <remarks>Returns true if the object is capable of being stopped</remarks>
         </member>
         <member name="T:DarkHouse.Behaviors.IOpenable">
             <summary>
@@ -106,19 +106,19 @@
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is opened successfullky</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.IOpenable.IsOpen">
+        <member name="P:DarkHouse.Behaviors.IOpenable.IsOpen">
             <summary>
             Determines whether an object is currently open
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is currently open</remarks>
+            <remarks>Returns true if the object is currently open</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.IOpenable.IsOpenable">
+        <member name="P:DarkHouse.Behaviors.IOpenable.IsOpenable">
             <summary>
             Determines whether an object can be opened
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object can be opened</remarks>
+            <remarks>Returns true if the object can be opened</remarks>
         </member>
         <member name="T:DarkHouse.Characters.Guide">
             <summary>
@@ -501,6 +501,20 @@
             </summary>
             <remarks>Defines a new Appliance</remarks>
         </member>
+        <member name="P:DarkHouse.Inventory.HouseHoldItem.Appliance.IsPlugged">
+            <summary>
+            Check whether the appliance is plugged in
+            </summary>
+            <returns><see cref="T:System.Boolean" /></returns>
+            <remarks>Returns true if the appliance is plugged in to a electric power socket</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.HouseHoldItem.Appliance.IsTurnedOn">
+            <summary>
+            Check whether the appliance is turned on/powered
+            </summary>
+            <returns><see cref="T:System.Boolean" /></returns>
+            <remarks>Returns true if the appliance is turned on/powered</remarks>
+        </member>
         <member name="T:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem">
             <summary>
             HouseHoldItem Class
@@ -557,6 +571,84 @@
             Use a household item
             </summary>
             <remarks>Defines how a household item is used by a player</remarks>
+        </member>
+        <member name="T:DarkHouse.Inventory.HouseHoldItem.Refrigerator">
+            <summary>
+            Refrigerator Class
+            </summary>
+            <remarks>Define an refrigerator</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Refrigerator constructor
+            </summary>
+            <remarks>Defines a new Refrigerator</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.Close">
+            <summary>
+            Close a refrigerator door
+            </summary> 
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true is closed successfully</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.Open">
+            <summary>
+            Open a refrigerator door
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is opened successfully</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.PickUp">
+            <summary>
+            Pick up a refrigerator
+            </summary>
+            <remarks>Defines the things that happened when player try to pick up a refrigerator</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.Drop">
+            <summary>
+            Drop a refrigerator
+            </summary>
+            <remarks>Defines the things that happened when player try to drop a refrigerator</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.Inspect">
+            <summary>
+            Inspect a refrigerator
+            </summary>
+            <remarks>Defines the things that happened when player is inspecting a refrigerator</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.Use">
+            <summary>
+            Inspect a refrigerator
+            </summary>
+            <remarks>Defines the things that happened when player is using a refrigerator</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.HouseHoldItem.Refrigerator.IsOpen">
+            <summary>
+            Determines whether the refrigerator door is currently open
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is currently open</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.HouseHoldItem.Refrigerator.IsOpenable">
+            <summary>
+            Determines whether a refrigerator door can be opened
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>This method returns <see cref="T:System.Boolean"/> true if the object can be opened</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.HouseHoldItem.Refrigerator.IsPlugged">
+            <summary>
+            Determines whether a refrigerator is plugged to the power socket
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>Returns true if the refrigerator is plugged in</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.HouseHoldItem.Refrigerator.IsTurnedOn">
+            <summary>
+            Determines whether a refrigerator is turned on/powered
+            </summary>
+            <returns><see cref="T:System.Boolean"/></returns>
+            <remarks>Returns true if the refrigerator is turned on/powered</remarks>
         </member>
         <member name="T:DarkHouse.Inventory.IInventory">
             <summary>
