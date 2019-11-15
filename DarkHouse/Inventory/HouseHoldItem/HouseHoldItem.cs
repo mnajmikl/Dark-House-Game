@@ -1,3 +1,9 @@
+/* 
+ * DarkHouse
+ * Horror Exploration Game
+ * Copyright (c) 2019 Mohammad Najmi
+ */
+ 
 using DarkHouse.Inventory;
 
 namespace DarkHouse.Inventory.HouseHoldItem
