@@ -16,15 +16,15 @@ namespace DarkHouse.Behaviors
         /// Determines whether an object is locked
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        /// <remarks>This method returns <see cref="bool"/> true if the object is locked</remarks>
-        bool IsLocked();
+        /// <remarks>Returns true if the object is locked</remarks>
+        bool IsLocked { get; }
 
         /// <summary>
         /// Determines whether an object can be locked
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        /// <remarks>This method returns <see cref="bool"/> true if the object can be locked</remarks>
-        bool IsLockable();
+        /// <remarks>Returns <see cref="bool"/> true if the object can be locked</remarks>
+        bool IsLockable { get; }
 
         /// <summary>
         /// Lock an object
