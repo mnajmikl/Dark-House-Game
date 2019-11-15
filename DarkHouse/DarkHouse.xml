@@ -489,6 +489,18 @@
             </summary>
             <remarks>Defines a window</remarks>
         </member>
+        <member name="T:DarkHouse.Inventory.HouseHoldItem.Appliance">
+            <summary>
+            Appliance Class
+            </summary>
+            <remarks>Define an appliance</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Appliance.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Appliance constructor
+            </summary>
+            <remarks>Defines a new Appliance</remarks>
+        </member>
         <member name="T:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem">
             <summary>
             HouseHoldItem Class
