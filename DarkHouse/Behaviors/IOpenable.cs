@@ -30,14 +30,14 @@ namespace DarkHouse.Behaviors
         /// Determines whether an object is currently open
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        /// <remarks>This method returns <see cref="bool"/> true if the object is currently open</remarks>
-        bool IsOpen();
+        /// <remarks>Returns true if the object is currently open</remarks>
+        bool IsOpen { get; }
 
         /// <summary>
         /// Determines whether an object can be opened
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        /// <remarks>This method returns <see cref="bool"/> true if the object can be opened</remarks>
-        bool IsOpenable();
+        /// <remarks>Returns true if the object can be opened</remarks>
+        bool IsOpenable { get; }
     }
 }
