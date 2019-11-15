@@ -23,15 +23,15 @@ namespace DarkHouse.Behaviors
         /// Determines whether the object is currently moving 
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        /// <remarks>This method returns <see cref="bool"/> true if the object is currently moving</remarks>
-        bool IsMoving();
+        /// <remarks>Returns true if the object is currently moving</remarks>
+        bool IsMoving { get; }
 
         /// <summary>
         /// Determines whether the object is moveable
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        /// <remarks>This method returns <see cref="bool"/> true if the object is moveable</remarks>
-        bool IsMoveable();
+        /// <remarks>Returns true if the object is moveable</remarks>
+        bool IsMoveable { get; }
 
         /// <summary>
         /// Stop an object
@@ -44,14 +44,14 @@ namespace DarkHouse.Behaviors
         /// Determines whether an object has been stopped
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        /// <remarks>This method returns <see cref="bool"/> true if the object has been stopped</remarks>
-        bool IsStopped();
+        /// <remarks>Returns true if the object has been stopped</remarks>
+        bool IsStopped { get; }
 
         /// <summary>
         /// Determines whether an object is capable of being stopped
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        /// <remarks>This method returns <see cref="bool"/> true if the object is capable of being stopped</remarks>
-        bool IsStoppable();
+        /// <remarks>Returns true if the object is capable of being stopped</remarks>
+        bool IsStoppable { get; }
     }
 }
