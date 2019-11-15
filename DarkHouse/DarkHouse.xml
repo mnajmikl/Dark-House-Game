@@ -489,32 +489,62 @@
             </summary>
             <remarks>Defines a window</remarks>
         </member>
-        <member name="T:DarkHouse.Inventory.HouseHoldItem">
+        <member name="T:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem">
             <summary>
             HouseHoldItem Class
             </summary>
             <remarks>Define a house hold item</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.HouseHoldItem.Name">
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.#ctor(System.String,System.String,System.String)">
             <summary>
-            Item name
+            HouseHoldItem constructor
             </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the item name</remarks>
+            <remarks>Defines a new HouseHoldItem</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.HouseHoldItem.Tag">
+        <member name="P:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.Name">
             <summary>
-            Item tag
+            HouseHoldItem name
             </summary>
             <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the item tag</remarks>
+            <remarks>Get or set the household item name</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.HouseHoldItem.Description">
+        <member name="P:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.Tag">
             <summary>
-            Item description
+            HouseHoldItem tag
             </summary>
             <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the item tag</remarks>
+            <remarks>Get or set the household item tag</remarks>
+        </member>
+        <member name="P:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.Description">
+            <summary>
+            HouseHoldItem description
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the household item tag</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.PickUp">
+            <summary>
+            Pick up a household item
+            </summary>
+            <remarks>Defines how a household item is picked up by a player</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.Drop">
+            <summary>
+            Drop a household item
+            </summary>
+            <remarks>Defines how a household item is dropped by a player</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.Inspect">
+            <summary>
+            Inspect a household item
+            </summary>
+            <remarks>Defines how a household item is inspected by a player</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.Use">
+            <summary>
+            Use a household item
+            </summary>
+            <remarks>Defines how a household item is used by a player</remarks>
         </member>
         <member name="T:DarkHouse.Inventory.IInventory">
             <summary>
@@ -606,6 +636,30 @@
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the item tag</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.IItem.PickUp">
+            <summary>
+            Pick up an item
+            </summary>
+            <remarks>Defines how an item is picked up by a player</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.IItem.Drop">
+            <summary>
+            Drop an item
+            </summary>
+            <remarks>Defines how an item is dropped by a player</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.IItem.Inspect">
+            <summary>
+            Inspect an item
+            </summary>
+            <remarks>Defines how an item is inspected by a player</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.IItem.Use">
+            <summary>
+            Use an item
+            </summary>
+            <remarks>Defines how an item is used by a player</remarks>
         </member>
         <member name="T:DarkHouse.Shapes.IShape">
             <summary>
