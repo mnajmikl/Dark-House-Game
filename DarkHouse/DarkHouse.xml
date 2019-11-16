@@ -120,6 +120,36 @@
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>Returns true if the object can be opened</remarks>
         </member>
+        <member name="T:DarkHouse.Behaviors.IPickable">
+            <summary>
+            IPickable Interface
+            </summary>
+            <remarks>Defines a pickable item</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.IPickable.PickUp">
+            <summary>
+            Pick up an item
+            </summary>
+            <remarks>Defines how an item is picked up by a player</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.IPickable.Drop">
+            <summary>
+            Drop an item
+            </summary>
+            <remarks>Defines how an item is dropped by a player</remarks>
+        </member>
+        <member name="T:DarkHouse.Behaviors.IUseable">
+            <summary>
+            IUseable Interface
+            </summary>
+            <remarks>Defines a useable item</remarks>
+        </member>
+        <member name="M:DarkHouse.Behaviors.IUseable.Use">
+            <summary>
+            Use an item
+            </summary>
+            <remarks>Defines how an item is used by a player</remarks>
+        </member>
         <member name="T:DarkHouse.Characters.Guide">
             <summary>
             Class Guide
@@ -501,6 +531,34 @@
             </summary>
             <remarks>Defines a new Appliance</remarks>
         </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Appliance.PlugIn">
+            <summary>
+            Plug in an appliance to a power socket
+            </summary>
+            <returns><see cref="T:System.Boolean" /></returns>
+            <remarks>Returns true if the appliance is plugged in to a electric power socket successfully</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Appliance.TurnOn">
+            <summary>
+            Turn on an appliance
+            </summary>
+            <returns><see cref="T:System.Boolean" /></returns>
+            <remarks>Returns true if the appliance is turned on successfully</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Appliance.Unplug">
+            <summary>
+            Unplug an appliance from a power socket
+            </summary>
+            <returns><see cref="T:System.Boolean" /></returns>
+            <remarks>Returns true if the appliance has been unplugged from a electric power socket successfully</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Appliance.TurnOff">
+            <summary>
+            Turn off an appliance
+            </summary>
+            <returns><see cref="T:System.Boolean" /></returns>
+            <remarks>Returns true if the appliance is turned off successfully</remarks>
+        </member>
         <member name="P:DarkHouse.Inventory.HouseHoldItem.Appliance.IsPlugged">
             <summary>
             Check whether the appliance is plugged in
@@ -548,29 +606,11 @@
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the household item tag</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.PickUp">
-            <summary>
-            Pick up a household item
-            </summary>
-            <remarks>Defines how a household item is picked up by a player</remarks>
-        </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.Drop">
-            <summary>
-            Drop a household item
-            </summary>
-            <remarks>Defines how a household item is dropped by a player</remarks>
-        </member>
         <member name="M:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.Inspect">
-            <summary>
-            Inspect a household item
-            </summary>
-            <remarks>Defines how a household item is inspected by a player</remarks>
-        </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.Use">
             <summary>
             Use a household item
             </summary>
-            <remarks>Defines how a household item is used by a player</remarks>
+            <remarks>Defines how a player may inspect a household item</remarks>
         </member>
         <member name="T:DarkHouse.Inventory.HouseHoldItem.Refrigerator">
             <summary>
@@ -598,29 +638,39 @@
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is opened successfully</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.PickUp">
-            <summary>
-            Pick up a refrigerator
-            </summary>
-            <remarks>Defines the things that happened when player try to pick up a refrigerator</remarks>
-        </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.Drop">
-            <summary>
-            Drop a refrigerator
-            </summary>
-            <remarks>Defines the things that happened when player try to drop a refrigerator</remarks>
-        </member>
         <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.Inspect">
             <summary>
             Inspect a refrigerator
             </summary>
             <remarks>Defines the things that happened when player is inspecting a refrigerator</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.Use">
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.PlugIn">
             <summary>
-            Inspect a refrigerator
+            Plug in a refrigerator to a power socket
             </summary>
-            <remarks>Defines the things that happened when player is using a refrigerator</remarks>
+            <returns><see cref="T:System.Boolean" /></returns>
+            <remarks>Returns true if the refrigerator is plugged in to a electric power socket successfully</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.TurnOn">
+            <summary>
+            Turn on a refrigerator
+            </summary>
+            <returns><see cref="T:System.Boolean" /></returns>
+            <remarks>Returns true if the refrigerator is turned on successfully</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.Unplug">
+            <summary>
+            Unplug a refrigerator from a power socket
+            </summary>
+            <returns><see cref="T:System.Boolean" /></returns>
+            <remarks>Returns true if the refrigerator has been unplugged from a electric power socket successfully</remarks>
+        </member>
+        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.TurnOff">
+            <summary>
+            Turn off a refrigerator
+            </summary>
+            <returns><see cref="T:System.Boolean" /></returns>
+            <remarks>Returns true if the refrigerator is turned off successfully</remarks>
         </member>
         <member name="P:DarkHouse.Inventory.HouseHoldItem.Refrigerator.IsOpen">
             <summary>
@@ -741,29 +791,11 @@
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the item tag</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.IItem.PickUp">
-            <summary>
-            Pick up an item
-            </summary>
-            <remarks>Defines how an item is picked up by a player</remarks>
-        </member>
-        <member name="M:DarkHouse.Inventory.IItem.Drop">
-            <summary>
-            Drop an item
-            </summary>
-            <remarks>Defines how an item is dropped by a player</remarks>
-        </member>
         <member name="M:DarkHouse.Inventory.IItem.Inspect">
             <summary>
             Inspect an item
             </summary>
             <remarks>Defines how an item is inspected by a player</remarks>
-        </member>
-        <member name="M:DarkHouse.Inventory.IItem.Use">
-            <summary>
-            Use an item
-            </summary>
-            <remarks>Defines how an item is used by a player</remarks>
         </member>
         <member name="T:DarkHouse.Shapes.IShape">
             <summary>
