@@ -34,27 +34,9 @@ namespace DarkHouse.Inventory
         string Description { get; set; }
 
         /// <summary>
-        /// Pick up an item
-        /// </summary>
-        /// <remarks>Defines how an item is picked up by a player</remarks>
-        void PickUp();
-
-        /// <summary>
-        /// Drop an item
-        /// </summary>
-        /// <remarks>Defines how an item is dropped by a player</remarks>
-        void Drop();
-
-        /// <summary>
         /// Inspect an item
         /// </summary>
         /// <remarks>Defines how an item is inspected by a player</remarks>
         void Inspect();
-
-        /// <summary>
-        /// Use an item
-        /// </summary>
-        /// <remarks>Defines how an item is used by a player</remarks>
-        void Use();
     }
 }

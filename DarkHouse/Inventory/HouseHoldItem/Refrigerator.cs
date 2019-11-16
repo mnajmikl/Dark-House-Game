@@ -40,11 +40,11 @@ namespace DarkHouse.Inventory.HouseHoldItem
             if (__isopened)
             {
                 __isopened = false;
-                Console.WriteLine($"Refrigerator {Name} has been closed.");
+                Console.WriteLine($"Refrigerator {Name}'s door has been closed.");
             }
             else
             {
-                Console.WriteLine($"Refrigerator {Name} has already been closed.");
+                Console.WriteLine($"Refrigerator {Name}'s door has already been closed.");
             }
             return true;
         }
@@ -69,24 +69,6 @@ namespace DarkHouse.Inventory.HouseHoldItem
         }
 
         /// <summary>
-        /// Pick up a refrigerator
-        /// </summary>
-        /// <remarks>Defines the things that happened when player try to pick up a refrigerator</remarks>
-        public override void PickUp()
-        {
-            Console.WriteLine($"Refrigerator {Name} cannot be picked up");
-        }
-
-        /// <summary>
-        /// Drop a refrigerator
-        /// </summary>
-        /// <remarks>Defines the things that happened when player try to drop a refrigerator</remarks>
-        public override void Drop()
-        {
-            Console.WriteLine($"Refrigerator {Name} cannot be dropped");
-        }
-
-        /// <summary>
         /// Inspect a refrigerator
         /// </summary>
         /// <remarks>Defines the things that happened when player is inspecting a refrigerator</remarks>
@@ -96,12 +78,79 @@ namespace DarkHouse.Inventory.HouseHoldItem
         }
 
         /// <summary>
-        /// Inspect a refrigerator
+        /// Plug in a refrigerator to a power socket
         /// </summary>
-        /// <remarks>Defines the things that happened when player is using a refrigerator</remarks>
-        public override void Use()
+        /// <returns><see cref="bool" /></returns>
+        /// <remarks>Returns true if the refrigerator is plugged in to a electric power socket successfully</remarks>
+        public override bool PlugIn()
         {
-            Console.WriteLine($"Using refrigerator {Name}");
+            if (!__isplugged)
+            {
+                __isplugged = true;
+                Console.WriteLine($"Refrigerator {Name} has been plugged in.");
+            }
+            else
+            {
+                Console.WriteLine($"Refrigerator {Name} has already been plugged in.");
+            }
+            return __isplugged;
+        }
+
+        /// <summary>
+        /// Turn on a refrigerator
+        /// </summary>
+        /// <returns><see cref="bool" /></returns>
+        /// <remarks>Returns true if the refrigerator is turned on successfully</remarks>
+        public override bool TurnOn()
+        {
+            if (!__isturnedon)
+            {
+                __isturnedon = true;
+                Console.WriteLine($"Refrigerator {Name} has been turned on.");
+            }
+            else
+            {
+                Console.WriteLine($"Refrigerator {Name} has already been turned on.");
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// Unplug a refrigerator from a power socket
+        /// </summary>
+        /// <returns><see cref="bool" /></returns>
+        /// <remarks>Returns true if the refrigerator has been unplugged from a electric power socket successfully</remarks>
+        public override bool Unplug()
+        {
+            if (__isplugged)
+            {
+                __isplugged = false;
+                Console.WriteLine($"Refrigerator {Name} has been unplugged.");
+            }
+            else
+            {
+                Console.WriteLine($"Refrigerator {Name} has already been unplugged.");
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// Turn off a refrigerator
+        /// </summary>
+        /// <returns><see cref="bool" /></returns>
+        /// <remarks>Returns true if the refrigerator is turned off successfully</remarks>
+        public override bool TurnOff()
+        {
+            if (__isturnedon)
+            {
+                __isturnedon = false;
+                Console.WriteLine($"Refrigerator {Name} has been turned off.");
+            }
+            else
+            {
+                Console.WriteLine($"Refrigerator {Name} has already been turned off.");
+            }
+            return true;
         }
 
         /// <summary>

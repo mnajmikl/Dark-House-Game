@@ -5,6 +5,7 @@
  */
  
 using DarkHouse.Inventory;
+using DarkHouse.Behaviors;
 
 namespace DarkHouse.Inventory.HouseHoldItem
 {
@@ -49,27 +50,9 @@ namespace DarkHouse.Inventory.HouseHoldItem
         public string Description { get => __description; set => __description = value; }
 
         /// <summary>
-        /// Pick up a household item
-        /// </summary>
-        /// <remarks>Defines how a household item is picked up by a player</remarks>
-        public abstract void PickUp();
-
-        /// <summary>
-        /// Drop a household item
-        /// </summary>
-        /// <remarks>Defines how a household item is dropped by a player</remarks>
-        public abstract void Drop();
- 
-        /// <summary>
-        /// Inspect a household item
-        /// </summary>
-        /// <remarks>Defines how a household item is inspected by a player</remarks>
-        public abstract void Inspect();
-
-        /// <summary>
         /// Use a household item
         /// </summary>
-        /// <remarks>Defines how a household item is used by a player</remarks>
-        public abstract void Use();
+        /// <remarks>Defines how a player may inspect a household item</remarks>
+        public abstract void Inspect();
     }
 }
