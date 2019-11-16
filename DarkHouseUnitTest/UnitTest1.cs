@@ -1,6 +1,4 @@
-using System;
 using NUnit.Framework;
-using DarkHouse.Inventory;
 using DarkHouse.Inventory.HouseHoldItem;
 
 namespace DarkHouseUnitTest
