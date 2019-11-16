@@ -3,9 +3,6 @@
  * Horror Exploration Game
  * Copyright (c) 2019 Mohammad Najmi
  */
- 
-using DarkHouse.Inventory;
-using DarkHouse.Behaviors;
 
 namespace DarkHouse.Inventory.HouseHoldItem
 {
