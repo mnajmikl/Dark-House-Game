@@ -12,29 +12,8 @@ namespace DarkHouse
     /// IInventory Interface
     /// </summary>
     /// <remarks>Defines area of an inventory</remarks>
-    public interface IInventory
+    public interface IInventory : IIdentity
     {
-        /// <summary>
-        /// Inventory name
-        /// </summary>
-        /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the inventory name</remarks>
-        string Name { get; set; }
-
-        /// <summary>
-        /// Inventory tag
-        /// </summary>
-        /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the inventory tag</remarks>
-        string Tag { get; set; }
-
-        /// <summary>
-        /// Inventory description
-        /// </summary>
-        /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the inventory tag</remarks>
-        string Description { get; set; }
-
         /// <summary>
         /// Add item to the inventory
         /// </summary>
