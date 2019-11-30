@@ -10,7 +10,7 @@ namespace DarkHouse
     /// IFloor Interface
     /// </summary>
     /// <remarks>Defines a floor</remarks>
-    public interface IFloor : IHousePart, ISpace3D
+    public interface IFloor : IIdentity, ISpace3D
     {
         /// <summary>
         /// Floors in a house

@@ -10,7 +10,7 @@ namespace DarkHouse
     /// IRoom Interface
     /// </summary>
     /// <remarks>Defines a room</remarks>
-    public interface IRoom : IHousePart, ISpace3D
+    public interface IRoom : IIdentity, ISpace3D
     {
         /// <summary>
         /// Room inventories

@@ -10,7 +10,7 @@ namespace DarkHouse
     /// IWindow Interface
     /// </summary>
     /// <remarks>Defines a window</remarks>
-    public interface IWindow : IHousePart, ILockable, IOpenable, IShape3D
+    public interface IWindow : IIdentity, ILockable, IOpenable, IShape3D
     {
     }
 }
