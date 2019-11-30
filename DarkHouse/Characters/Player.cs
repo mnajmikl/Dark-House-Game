@@ -16,7 +16,7 @@ namespace DarkHouse
     {
         // private class members
         private string __name;
-        private string __title;
+        private string __tag;
         private string __description;
         private IInventory[] __inventories;
 
@@ -25,13 +25,13 @@ namespace DarkHouse
         /// </summary>
         /// <param name="description">Description of the Player</param>
         /// <param name="inventories"><see cref="IInventory"/> of the Player</param>
-        /// <param name="title">Player title</param>
+        /// <param name="tag">Player title</param>
         /// <param name="name">Player name</param>
         /// <remarks>Defines a new Player with name, title, and description</remarks>
-        public Player(string name, string title, string description, IInventory[] inventories)
+        public Player(string name, string tag, string description, IInventory[] inventories)
         {
             __name = name;
-            __title = title;
+            __tag = tag;
             __description = description;
 
             if (inventories != null && inventories.Length > 0)
@@ -50,14 +50,14 @@ namespace DarkHouse
         /// </summary>
         /// <returns><see cref="string"/></returns>
         /// <remarks>Get or set the Player name</remarks>
-        public string Name { get => __name; }
+        public string Name { get => __name; set => __name = value;  }
 
         /// <summary>
         /// Player title
         /// </summary>
         /// <returns><see cref="string"/></returns>
         /// <remarks>Get or set the Player title</remarks>
-        public string Title { get => __title; set => __title = value; }
+        public string Tag { get => __tag; set => __tag = value; }
 
         /// <summary>
         /// Player description

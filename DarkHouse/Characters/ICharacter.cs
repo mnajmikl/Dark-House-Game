@@ -10,29 +10,8 @@ namespace DarkHouse
     /// ICharacter Interface
     /// </summary>
     /// <remarks>Defines a game character</remarks>
-    public interface ICharacter
+    public interface ICharacter : IIdentity
     {
-        /// <summary>
-        /// Character name
-        /// </summary>
-        /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the character name</remarks>
-        string Name { get; }
-
-        /// <summary>
-        /// Character title
-        /// </summary>
-        /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the character tag</remarks>
-        string Title { get; set; }
-
-        /// <summary>
-        /// Character description
-        /// </summary>
-        /// <returns><see cref="string"/></returns>
-        /// <remarks>Get or set the character tag</remarks>
-        string Description { get; set; }
-
         /// <summary>
         /// Character inventories
         /// </summary>
