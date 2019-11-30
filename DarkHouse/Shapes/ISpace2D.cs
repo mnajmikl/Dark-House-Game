@@ -6,7 +6,7 @@
 
 using System.Drawing;
 
-namespace DarkHouse.Shapes
+namespace DarkHouse
 {
     /// <summary>
     /// ISpace2D Interface

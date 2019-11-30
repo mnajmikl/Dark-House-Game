@@ -6,7 +6,7 @@
 
 using System.ComponentModel;
 
-namespace DarkHouse.Enums
+namespace DarkHouse
 {
     /// <summary>
     /// MeasurementUnits enum

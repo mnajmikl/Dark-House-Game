@@ -7,7 +7,7 @@
 using System;
 using System.Drawing;
 
-namespace DarkHouse.Shapes
+namespace DarkHouse
 {
     /// <summary>
     /// Side struct

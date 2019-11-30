@@ -4,8 +4,6 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
-using DarkHouse.Inventory;
-
 namespace DarkHouse.House
 {
     /// <summary>

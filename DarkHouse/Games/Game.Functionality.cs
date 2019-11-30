@@ -5,10 +5,8 @@
  */
 
 using System;
-using DarkHouse.House;
-using DarkHouse.Characters;
 
-namespace DarkHouse.Games
+namespace DarkHouse
 {
     public partial class Game
     {

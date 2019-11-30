@@ -4,7 +4,7 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
-namespace DarkHouse.Inventory.HouseHoldItem
+namespace DarkHouse
 {
     /// <summary>
     /// HouseHoldItem Class

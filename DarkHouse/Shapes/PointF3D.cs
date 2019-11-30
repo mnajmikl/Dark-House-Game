@@ -6,7 +6,7 @@
 
 using System;
 
-namespace DarkHouse.Shapes
+namespace DarkHouse
 {
     /// <summary>
     /// PointF3D Struct

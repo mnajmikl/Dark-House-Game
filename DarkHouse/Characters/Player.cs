@@ -5,9 +5,8 @@
  */
 
 using System;
-using DarkHouse.Inventory;
 
-namespace DarkHouse.Characters
+namespace DarkHouse
 {
     /// <summary>
     /// Class Player

@@ -4,7 +4,7 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
-namespace DarkHouse.Shapes
+namespace DarkHouse
 {
     /// <summary>
     /// IShape Interface

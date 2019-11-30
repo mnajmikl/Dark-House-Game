@@ -4,7 +4,7 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
-namespace DarkHouse.House
+namespace DarkHouse
 {
     /// <summary>
     /// IHousePart Interface

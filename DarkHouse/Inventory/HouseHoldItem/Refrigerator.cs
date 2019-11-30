@@ -5,9 +5,8 @@
  */
 
 using System;
-using DarkHouse.Behaviors;
 
-namespace DarkHouse.Inventory.HouseHoldItem
+namespace DarkHouse
 {
     /// <summary>
     /// Refrigerator Class

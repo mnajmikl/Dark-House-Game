@@ -4,339 +4,339 @@
         <name>DarkHouse</name>
     </assembly>
     <members>
-        <member name="T:DarkHouse.Behaviors.ILockable">
+        <member name="T:DarkHouse.ILockable">
             <summary>
              ILockable Interface
             </summary>
             <remarks>Defines an lockable object</remarks>
         </member>
-        <member name="P:DarkHouse.Behaviors.ILockable.IsLocked">
+        <member name="P:DarkHouse.ILockable.IsLocked">
             <summary>
             Determines whether an object is locked
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>Returns true if the object is locked</remarks>
         </member>
-        <member name="P:DarkHouse.Behaviors.ILockable.IsLockable">
+        <member name="P:DarkHouse.ILockable.IsLockable">
             <summary>
             Determines whether an object can be locked
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>Returns <see cref="T:System.Boolean"/> true if the object can be locked</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.ILockable.Lock">
+        <member name="M:DarkHouse.ILockable.Lock">
             <summary>
             Lock an object
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is locked successfully</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.ILockable.Unlock">
+        <member name="M:DarkHouse.ILockable.Unlock">
             <summary>
             Unlock an object
             </summary>
             <returns></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is unlocked successfully</remarks>
         </member>
-        <member name="T:DarkHouse.Behaviors.IMoveable">
+        <member name="T:DarkHouse.IMoveable">
             <summary>
             IMoveable Interface
             </summary>
             <remarks>Defines a moveable object</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.IMoveable.Move">
+        <member name="M:DarkHouse.IMoveable.Move">
             <summary>
             Move an object
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is moving successfully</remarks>
         </member>
-        <member name="P:DarkHouse.Behaviors.IMoveable.IsMoving">
+        <member name="P:DarkHouse.IMoveable.IsMoving">
             <summary>
             Determines whether the object is currently moving 
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>Returns true if the object is currently moving</remarks>
         </member>
-        <member name="P:DarkHouse.Behaviors.IMoveable.IsMoveable">
+        <member name="P:DarkHouse.IMoveable.IsMoveable">
             <summary>
             Determines whether the object is moveable
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>Returns true if the object is moveable</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.IMoveable.Stop">
+        <member name="M:DarkHouse.IMoveable.Stop">
             <summary>
             Stop an object
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if stopping the object is successful</remarks>
         </member>
-        <member name="P:DarkHouse.Behaviors.IMoveable.IsStopped">
+        <member name="P:DarkHouse.IMoveable.IsStopped">
             <summary>
             Determines whether an object has been stopped
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>Returns true if the object has been stopped</remarks>
         </member>
-        <member name="P:DarkHouse.Behaviors.IMoveable.IsStoppable">
+        <member name="P:DarkHouse.IMoveable.IsStoppable">
             <summary>
             Determines whether an object is capable of being stopped
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>Returns true if the object is capable of being stopped</remarks>
         </member>
-        <member name="T:DarkHouse.Behaviors.IOpenable">
+        <member name="T:DarkHouse.IOpenable">
             <summary>
             IOpenable Interface
             </summary>
             <remarks>Defines an openable object</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.IOpenable.Close">
+        <member name="M:DarkHouse.IOpenable.Close">
             <summary>
             Close an object
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true is closed successfully</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.IOpenable.Open">
+        <member name="M:DarkHouse.IOpenable.Open">
             <summary>
             Open an object
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is opened successfullky</remarks>
         </member>
-        <member name="P:DarkHouse.Behaviors.IOpenable.IsOpen">
+        <member name="P:DarkHouse.IOpenable.IsOpen">
             <summary>
             Determines whether an object is currently open
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>Returns true if the object is currently open</remarks>
         </member>
-        <member name="P:DarkHouse.Behaviors.IOpenable.IsOpenable">
+        <member name="P:DarkHouse.IOpenable.IsOpenable">
             <summary>
             Determines whether an object can be opened
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>Returns true if the object can be opened</remarks>
         </member>
-        <member name="T:DarkHouse.Behaviors.IPickable">
+        <member name="T:DarkHouse.IPickable">
             <summary>
             IPickable Interface
             </summary>
             <remarks>Defines a pickable item</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.IPickable.PickUp">
+        <member name="M:DarkHouse.IPickable.PickUp">
             <summary>
             Pick up an item
             </summary>
             <remarks>Defines how an item is picked up by a player</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.IPickable.Drop">
+        <member name="M:DarkHouse.IPickable.Drop">
             <summary>
             Drop an item
             </summary>
             <remarks>Defines how an item is dropped by a player</remarks>
         </member>
-        <member name="T:DarkHouse.Behaviors.IUseable">
+        <member name="T:DarkHouse.IUseable">
             <summary>
             IUseable Interface
             </summary>
             <remarks>Defines a useable item</remarks>
         </member>
-        <member name="M:DarkHouse.Behaviors.IUseable.Use">
+        <member name="M:DarkHouse.IUseable.Use">
             <summary>
             Use an item
             </summary>
             <remarks>Defines how an item is used by a player</remarks>
         </member>
-        <member name="T:DarkHouse.Characters.Guide">
+        <member name="T:DarkHouse.Guide">
             <summary>
             Class Guide
             </summary>
             <remarks>Defines a game Guide</remarks>
         </member>
-        <member name="M:DarkHouse.Characters.Guide.#ctor(System.String,System.String,System.String,DarkHouse.Inventory.IInventory[])">
+        <member name="M:DarkHouse.Guide.#ctor(System.String,System.String,System.String,DarkHouse.IInventory[])">
             <summary>
             Constructor of a Guide
             </summary>
             <param name="description">Description of the Guide</param>
-            <param name="inventories"><see cref="T:DarkHouse.Inventory.IInventory"/> of the Guide</param>
+            <param name="inventories"><see cref="T:DarkHouse.IInventory"/> of the Guide</param>
             <param name="title">Guide title</param>
             <param name="name">Guide name</param>
             <remarks>Defines a new Guide with name, title, and description</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.Guide.Name">
+        <member name="P:DarkHouse.Guide.Name">
             <summary>
             Guide name
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the Guide name</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.Guide.Title">
+        <member name="P:DarkHouse.Guide.Title">
             <summary>
             Guide title
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the Guide title</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.Guide.Description">
+        <member name="P:DarkHouse.Guide.Description">
             <summary>
             Guide description
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the Guide description</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.Guide.Inventories">
+        <member name="P:DarkHouse.Guide.Inventories">
             <summary>
             Guide inventories
             </summary>
-            <returns><see cref="T:DarkHouse.Inventory.IInventory"/></returns>
+            <returns><see cref="T:DarkHouse.IInventory"/></returns>
             <remarks>Get the Guide inventories</remarks>
         </member>
-        <member name="T:DarkHouse.Characters.ICharacter">
+        <member name="T:DarkHouse.ICharacter">
             <summary>
             ICharacter Interface
             </summary>
             <remarks>Defines a game character</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.ICharacter.Name">
+        <member name="P:DarkHouse.ICharacter.Name">
             <summary>
             Character name
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the character name</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.ICharacter.Title">
+        <member name="P:DarkHouse.ICharacter.Title">
             <summary>
             Character title
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the character tag</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.ICharacter.Description">
+        <member name="P:DarkHouse.ICharacter.Description">
             <summary>
             Character description
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the character tag</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.ICharacter.Inventories">
+        <member name="P:DarkHouse.ICharacter.Inventories">
             <summary>
             Character inventories
             </summary>
-            <returns><see cref="T:DarkHouse.Inventory.IInventory"/></returns>
+            <returns><see cref="T:DarkHouse.IInventory"/></returns>
             <remarks>Get the character inventories</remarks>
         </member>
-        <member name="T:DarkHouse.Characters.Player">
+        <member name="T:DarkHouse.Player">
             <summary>
             Class Player
             </summary>
             <remarks>Defines a game player</remarks>
         </member>
-        <member name="M:DarkHouse.Characters.Player.#ctor(System.String,System.String,System.String,DarkHouse.Inventory.IInventory[])">
+        <member name="M:DarkHouse.Player.#ctor(System.String,System.String,System.String,DarkHouse.IInventory[])">
             <summary>
             Constructor of a Player
             </summary>
             <param name="description">Description of the Player</param>
-            <param name="inventories"><see cref="T:DarkHouse.Inventory.IInventory"/> of the Player</param>
+            <param name="inventories"><see cref="T:DarkHouse.IInventory"/> of the Player</param>
             <param name="title">Player title</param>
             <param name="name">Player name</param>
             <remarks>Defines a new Player with name, title, and description</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.Player.Name">
+        <member name="P:DarkHouse.Player.Name">
             <summary>
             Player name
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the Player name</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.Player.Title">
+        <member name="P:DarkHouse.Player.Title">
             <summary>
             Player title
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the Player title</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.Player.Description">
+        <member name="P:DarkHouse.Player.Description">
             <summary>
             Player description
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the Player description</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.Player.Inventories">
+        <member name="P:DarkHouse.Player.Inventories">
             <summary>
             Player inventories
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory"/></returns>
+            <returns>Array of <see cref="T:DarkHouse.IInventory"/></returns>
             <remarks>Get the Player inventories</remarks>
         </member>
-        <member name="T:DarkHouse.Characters.Spook">
+        <member name="T:DarkHouse.Spook">
             <summary>
             Class Spook
             </summary>
             <remarks>Defines a game Spook</remarks>
         </member>
-        <member name="M:DarkHouse.Characters.Spook.#ctor(System.String,System.String,System.String,DarkHouse.Inventory.IInventory[])">
+        <member name="M:DarkHouse.Spook.#ctor(System.String,System.String,System.String,DarkHouse.IInventory[])">
             <summary>
             Constructor of a Spook
             </summary>
             <param name="description">Description of the Spook</param>
-            <param name="inventories"><see cref="T:DarkHouse.Inventory.IInventory"/> of the Spook</param>
+            <param name="inventories"><see cref="T:DarkHouse.IInventory"/> of the Spook</param>
             <param name="title">Spook title</param>
             <param name="name">Spook display name</param>
             <remarks>Defines a new Spook with name, title, and description</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.Spook.Name">
+        <member name="P:DarkHouse.Spook.Name">
             <summary>
             Spook name
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the Spook name</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.Spook.Title">
+        <member name="P:DarkHouse.Spook.Title">
             <summary>
             Spook title
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the Spook title</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.Spook.Description">
+        <member name="P:DarkHouse.Spook.Description">
             <summary>
             Spook description
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the Spook description</remarks>
         </member>
-        <member name="P:DarkHouse.Characters.Spook.Inventories">
+        <member name="P:DarkHouse.Spook.Inventories">
             <summary>
             Spook inventories
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory"/></returns>
+            <returns>Array of <see cref="T:DarkHouse.IInventory"/></returns>
             <remarks>Get the Spook inventories</remarks>
         </member>
-        <member name="T:DarkHouse.Enums.MeasurementUnits">
+        <member name="T:DarkHouse.MeasurementUnits">
             <summary>
             MeasurementUnits enum
             </summary>
             <remarks>Measurement units</remarks>
         </member>
-        <member name="F:DarkHouse.Enums.MeasurementUnits.Metrics">
+        <member name="F:DarkHouse.MeasurementUnits.Metrics">
             <summary>Metric (0)</summary>
             <remarks>Measurement unit is metric (meter)</remarks>
         </member>
-        <member name="F:DarkHouse.Enums.MeasurementUnits.Imperial">
+        <member name="F:DarkHouse.MeasurementUnits.Imperial">
             <summary>Imperial (1)</summary>
             <remarks>Measurement unit is imperial (feet)</remarks>
         </member>
-        <member name="T:DarkHouse.Games.Game">
+        <member name="T:DarkHouse.Game">
             <summary>
             Class Game
             </summary>
             <remarks>Defines a Game</remarks>
         </member>
-        <member name="M:DarkHouse.Games.Game.#ctor(System.String,System.String,System.String,DarkHouse.House.IHouse,DarkHouse.Characters.ICharacter[])">
+        <member name="M:DarkHouse.Game.#ctor(System.String,System.String,System.String,DarkHouse.IHouse,DarkHouse.ICharacter[])">
             <summary>
             Game constructor
             </summary>
@@ -347,127 +347,127 @@
             <param name="players">Game characters objects</param>
             <remarks>Defines a new Game</remarks>
         </member>
-        <member name="P:DarkHouse.Games.Game.House">
+        <member name="P:DarkHouse.Game.House">
             <summary>
             House of current Game
             </summary>
-            <returns><see cref="T:DarkHouse.House.IHouse" /></returns>
+            <returns><see cref="T:DarkHouse.IHouse" /></returns>
             <remarks>Returns the current game house</remarks>
         </member>
-        <member name="P:DarkHouse.Games.Game.Players">
+        <member name="P:DarkHouse.Game.Players">
             <summary>
             Characters of current Game
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.Characters.ICharacter" /></returns>
+            <returns>Array of <see cref="T:DarkHouse.ICharacter" /></returns>
             <remarks>Returns the current game characters</remarks>
         </member>
-        <member name="P:DarkHouse.Games.Game.Name">
+        <member name="P:DarkHouse.Game.Name">
             <summary>
             Name of current Game
             </summary>
             <returns><see cref="T:System.String" /></returns>
             <remarks>Returns the current game name</remarks>
         </member>
-        <member name="P:DarkHouse.Games.Game.Title">
+        <member name="P:DarkHouse.Game.Title">
             <summary>
             Title of current Game
             </summary>
             <returns><see cref="T:System.String" /></returns>
             <remarks>Get or set the current game name</remarks>
         </member>
-        <member name="P:DarkHouse.Games.Game.Description">
+        <member name="P:DarkHouse.Game.Description">
             <summary>
             Description of current Game
             </summary>
             <returns><see cref="T:System.String" /></returns>
             <remarks>Get or set the current description name</remarks>
         </member>
-        <member name="M:DarkHouse.Games.Game.GetHashCode">
+        <member name="M:DarkHouse.Game.GetHashCode">
             <summary>
             Get the hash code of current Game
             </summary>
             <returns><see cref="T:System.Int32" /></returns>
             <remarks>Returns the current game hash code</remarks>
         </member>
-        <member name="M:DarkHouse.Games.Game.CreateSession">
+        <member name="M:DarkHouse.Game.CreateSession">
             <summary>
             Create game session
             </summary>
             <remarks>Use this method to create a game session</remarks>
         </member>
-        <member name="M:DarkHouse.Games.Game.EndGame">
+        <member name="M:DarkHouse.Game.EndGame">
             <summary>
             End game session
             </summary>
             <remarks>Use this method to end a game session</remarks>
         </member>
-        <member name="T:DarkHouse.House.IDoor">
+        <member name="T:DarkHouse.IDoor">
             <summary>
             IDoor Interface
             </summary>
             <remarks>Defines a door</remarks>
         </member>
-        <member name="T:DarkHouse.House.IFloor">
+        <member name="T:DarkHouse.IFloor">
             <summary>
             IFloor Interface
             </summary>
             <remarks>Defines a floor</remarks>
         </member>
-        <member name="P:DarkHouse.House.IFloor.Rooms">
+        <member name="P:DarkHouse.IFloor.Rooms">
             <summary>
             Floors in a house
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.House.IRoom" /></returns>
+            <returns>Array of <see cref="T:DarkHouse.IRoom" /></returns>
             <remarks>Get the rooms of a floor</remarks>
         </member>
-        <member name="P:DarkHouse.House.IFloor.Inventories">
+        <member name="P:DarkHouse.IFloor.Inventories">
             <summary>
             Floor inventories
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory"/></returns>
+            <returns>Array of <see cref="T:DarkHouse.IInventory"/></returns>
             <remarks>Get the Floor inventories</remarks>
         </member>
-        <member name="T:DarkHouse.House.IHouse">
+        <member name="T:DarkHouse.IHouse">
             <summary>
             IHouse Interface
             </summary>
             <remarks>Defines a house</remarks>
         </member>
-        <member name="P:DarkHouse.House.IHouse.Floors">
+        <member name="P:DarkHouse.IHouse.Floors">
             <summary>
             Floors in a house
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.House.IFloor" /></returns>
+            <returns>Array of <see cref="T:DarkHouse.IFloor" /></returns>
             <remarks>Get the floors of a house</remarks>
         </member>
-        <member name="P:DarkHouse.House.IHouse.Inventories">
+        <member name="P:DarkHouse.IHouse.Inventories">
             <summary>
             House inventories
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory"/></returns>
+            <returns>Array of <see cref="T:DarkHouse.IInventory"/></returns>
             <remarks>Get the House inventories</remarks>
         </member>
-        <member name="T:DarkHouse.House.IHousePart">
+        <member name="T:DarkHouse.IHousePart">
             <summary>
             IHousePart Interface
             </summary>
             <remarks>Defines a house part</remarks>
         </member>
-        <member name="P:DarkHouse.House.IHousePart.Name">
+        <member name="P:DarkHouse.IHousePart.Name">
             <summary>
             House part name
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the house part name</remarks>
         </member>
-        <member name="P:DarkHouse.House.IHousePart.Tag">
+        <member name="P:DarkHouse.IHousePart.Tag">
             <summary>
             House part tag
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the house part tag</remarks>
         </member>
-        <member name="P:DarkHouse.House.IHousePart.Description">
+        <member name="P:DarkHouse.IHousePart.Description">
             <summary>
             House part description
             </summary>
@@ -480,371 +480,371 @@
             </summary>
             <remarks>Defines a key</remarks>
         </member>
-        <member name="M:DarkHouse.House.IKey.MatchLock(DarkHouse.House.ILock)">
+        <member name="M:DarkHouse.House.IKey.MatchLock(DarkHouse.ILock)">
             <summary>
             Determines whether a key matches a lock
             </summary>
             <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if key match lock</remarks>
         </member>
-        <member name="T:DarkHouse.House.ILock">
+        <member name="T:DarkHouse.ILock">
             <summary>
             ILock Interface
             </summary>
             <remarks>Defines a lock</remarks>
         </member>
-        <member name="M:DarkHouse.House.ILock.HasKey">
+        <member name="M:DarkHouse.ILock.HasKey">
             <summary>
             Determines whether an item has a key
             </summary>
             <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if the item has a key</remarks>
         </member>
-        <member name="T:DarkHouse.House.IRoom">
+        <member name="T:DarkHouse.IRoom">
             <summary>
             IRoom Interface
             </summary>
             <remarks>Defines a room</remarks>
         </member>
-        <member name="P:DarkHouse.House.IRoom.Inventories">
+        <member name="P:DarkHouse.IRoom.Inventories">
             <summary>
             Room inventories
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.Inventory.IInventory"/></returns>
+            <returns>Array of <see cref="T:DarkHouse.IInventory"/></returns>
             <remarks>Get the Room inventories</remarks>
         </member>
-        <member name="T:DarkHouse.House.IWindow">
+        <member name="T:DarkHouse.IWindow">
             <summary>
             IWindow Interface
             </summary>
             <remarks>Defines a window</remarks>
         </member>
-        <member name="T:DarkHouse.Inventory.HouseHoldItem.Appliance">
+        <member name="T:DarkHouse.Appliance">
             <summary>
             Appliance Class
             </summary>
             <remarks>Define an appliance</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Appliance.#ctor(System.String,System.String,System.String)">
+        <member name="M:DarkHouse.Appliance.#ctor(System.String,System.String,System.String)">
             <summary>
             Appliance constructor
             </summary>
             <remarks>Defines a new Appliance</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Appliance.PlugIn">
+        <member name="M:DarkHouse.Appliance.PlugIn">
             <summary>
             Plug in an appliance to a power socket
             </summary>
             <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if the appliance is plugged in to a electric power socket successfully</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Appliance.TurnOn">
+        <member name="M:DarkHouse.Appliance.TurnOn">
             <summary>
             Turn on an appliance
             </summary>
             <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if the appliance is turned on successfully</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Appliance.Unplug">
+        <member name="M:DarkHouse.Appliance.Unplug">
             <summary>
             Unplug an appliance from a power socket
             </summary>
             <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if the appliance has been unplugged from a electric power socket successfully</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Appliance.TurnOff">
+        <member name="M:DarkHouse.Appliance.TurnOff">
             <summary>
             Turn off an appliance
             </summary>
             <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if the appliance is turned off successfully</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.HouseHoldItem.Appliance.IsPlugged">
+        <member name="P:DarkHouse.Appliance.IsPlugged">
             <summary>
             Check whether the appliance is plugged in
             </summary>
             <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if the appliance is plugged in to a electric power socket</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.HouseHoldItem.Appliance.IsTurnedOn">
+        <member name="P:DarkHouse.Appliance.IsTurnedOn">
             <summary>
             Check whether the appliance is turned on/powered
             </summary>
             <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if the appliance is turned on/powered</remarks>
         </member>
-        <member name="T:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem">
+        <member name="T:DarkHouse.HouseHoldItem">
             <summary>
             HouseHoldItem Class
             </summary>
             <remarks>Define a house hold item</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.#ctor(System.String,System.String,System.String)">
+        <member name="M:DarkHouse.HouseHoldItem.#ctor(System.String,System.String,System.String)">
             <summary>
             HouseHoldItem constructor
             </summary>
             <remarks>Defines a new HouseHoldItem</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.Name">
+        <member name="P:DarkHouse.HouseHoldItem.Name">
             <summary>
             HouseHoldItem name
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the household item name</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.Tag">
+        <member name="P:DarkHouse.HouseHoldItem.Tag">
             <summary>
             HouseHoldItem tag
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the household item tag</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.Description">
+        <member name="P:DarkHouse.HouseHoldItem.Description">
             <summary>
             HouseHoldItem description
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the household item tag</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.HouseHoldItem.Inspect">
+        <member name="M:DarkHouse.HouseHoldItem.Inspect">
             <summary>
             Use a household item
             </summary>
             <remarks>Defines how a player may inspect a household item</remarks>
         </member>
-        <member name="T:DarkHouse.Inventory.HouseHoldItem.Refrigerator">
+        <member name="T:DarkHouse.Refrigerator">
             <summary>
             Refrigerator Class
             </summary>
             <remarks>Define an refrigerator</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.#ctor(System.String,System.String,System.String)">
+        <member name="M:DarkHouse.Refrigerator.#ctor(System.String,System.String,System.String)">
             <summary>
             Refrigerator constructor
             </summary>
             <remarks>Defines a new Refrigerator</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.Close">
+        <member name="M:DarkHouse.Refrigerator.Close">
             <summary>
             Close a refrigerator door
             </summary> 
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true is closed successfully</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.Open">
+        <member name="M:DarkHouse.Refrigerator.Open">
             <summary>
             Open a refrigerator door
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is opened successfully</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.Inspect">
+        <member name="M:DarkHouse.Refrigerator.Inspect">
             <summary>
             Inspect a refrigerator
             </summary>
             <remarks>Defines the things that happened when player is inspecting a refrigerator</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.PlugIn">
+        <member name="M:DarkHouse.Refrigerator.PlugIn">
             <summary>
             Plug in a refrigerator to a power socket
             </summary>
             <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if the refrigerator is plugged in to a electric power socket successfully</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.TurnOn">
+        <member name="M:DarkHouse.Refrigerator.TurnOn">
             <summary>
             Turn on a refrigerator
             </summary>
             <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if the refrigerator is turned on successfully</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.Unplug">
+        <member name="M:DarkHouse.Refrigerator.Unplug">
             <summary>
             Unplug a refrigerator from a power socket
             </summary>
             <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if the refrigerator has been unplugged from a electric power socket successfully</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.HouseHoldItem.Refrigerator.TurnOff">
+        <member name="M:DarkHouse.Refrigerator.TurnOff">
             <summary>
             Turn off a refrigerator
             </summary>
             <returns><see cref="T:System.Boolean" /></returns>
             <remarks>Returns true if the refrigerator is turned off successfully</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.HouseHoldItem.Refrigerator.IsOpen">
+        <member name="P:DarkHouse.Refrigerator.IsOpen">
             <summary>
             Determines whether the refrigerator door is currently open
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if the object is currently open</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.HouseHoldItem.Refrigerator.IsOpenable">
+        <member name="P:DarkHouse.Refrigerator.IsOpenable">
             <summary>
             Determines whether a refrigerator door can be opened
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>This method returns <see cref="T:System.Boolean"/> true if the object can be opened</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.HouseHoldItem.Refrigerator.IsPlugged">
+        <member name="P:DarkHouse.Refrigerator.IsPlugged">
             <summary>
             Determines whether a refrigerator is plugged to the power socket
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>Returns true if the refrigerator is plugged in</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.HouseHoldItem.Refrigerator.IsTurnedOn">
+        <member name="P:DarkHouse.Refrigerator.IsTurnedOn">
             <summary>
             Determines whether a refrigerator is turned on/powered
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
             <remarks>Returns true if the refrigerator is turned on/powered</remarks>
         </member>
-        <member name="T:DarkHouse.Inventory.IInventory">
+        <member name="T:DarkHouse.IInventory">
             <summary>
             IInventory Interface
             </summary>
             <remarks>Defines area of an inventory</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.IInventory.Name">
+        <member name="P:DarkHouse.IInventory.Name">
             <summary>
             Inventory name
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the inventory name</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.IInventory.Tag">
+        <member name="P:DarkHouse.IInventory.Tag">
             <summary>
             Inventory tag
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the inventory tag</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.IInventory.Description">
+        <member name="P:DarkHouse.IInventory.Description">
             <summary>
             Inventory description
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the inventory tag</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.IInventory.Add(DarkHouse.Inventory.IItem)">
+        <member name="M:DarkHouse.IInventory.Add(DarkHouse.IItem)">
             <summary>
             Add item to the inventory
             </summary>
             <param name="item">Item to add</param>
             <remarks>Add an item to the inventory</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.IInventory.Remove(System.Int32)">
+        <member name="M:DarkHouse.IInventory.Remove(System.Int32)">
             <summary>
             Remove item from an inventory
             </summary>
             <param name="index">Index of item to remove</param>
             <remarks>Search and remove item from the inventory at the selected index <paramref name="index"/></remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.IInventory.Remove(System.String)">
+        <member name="M:DarkHouse.IInventory.Remove(System.String)">
             <summary>
             Remove item(s) from an inventory
             </summary>
             <param name="itemName">Item name to remove</param>
             <remarks>Search and remove item(s) from the inventory using item name <paramref name="itemName"/></remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.IInventory.GetItem(System.Int32)">
+        <member name="M:DarkHouse.IInventory.GetItem(System.Int32)">
             <summary>
             Get item from an inventory
             </summary>
             <param name="index">Index of item to search</param>
-            <returns><see cref="T:DarkHouse.Inventory.IItem" /></returns>
+            <returns><see cref="T:DarkHouse.IItem" /></returns>
             <remarks>Get the inventory item at the selected index <paramref name="index"/></remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.IInventory.GetItems(System.String)">
+        <member name="M:DarkHouse.IInventory.GetItems(System.String)">
             <summary>
             Get item(s) from an inventory
             </summary>
             <param name="itemName">Item name to search</param>
-            <returns>Array of <see cref="T:DarkHouse.Inventory.IItem" /></returns>
+            <returns>Array of <see cref="T:DarkHouse.IItem" /></returns>
             <remarks>Get item(s) from the inventory using item name <paramref name="itemName"/></remarks>
         </member>
-        <member name="T:DarkHouse.Inventory.IItem">
+        <member name="T:DarkHouse.IItem">
             <summary>
             IItem Interface
             </summary>
             <remarks>Defines area of an item</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.IItem.Name">
+        <member name="P:DarkHouse.IItem.Name">
             <summary>
             Item name
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the item name</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.IItem.Tag">
+        <member name="P:DarkHouse.IItem.Tag">
             <summary>
             Item tag
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the item tag</remarks>
         </member>
-        <member name="P:DarkHouse.Inventory.IItem.Description">
+        <member name="P:DarkHouse.IItem.Description">
             <summary>
             Item description
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the item tag</remarks>
         </member>
-        <member name="M:DarkHouse.Inventory.IItem.Inspect">
+        <member name="M:DarkHouse.IItem.Inspect">
             <summary>
             Inspect an item
             </summary>
             <remarks>Defines how an item is inspected by a player</remarks>
         </member>
-        <member name="T:DarkHouse.Shapes.IShape">
+        <member name="T:DarkHouse.IShape">
             <summary>
             IShape Interface
             </summary>
             <remarks>Defines a shape</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.IShape.Name">
+        <member name="P:DarkHouse.IShape.Name">
             <summary>
             Shape name
             </summary>
             <returns><see cref="T:System.String"/></returns>
             <remarks>Returns a shape name</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.IShape.SidesCount">
+        <member name="P:DarkHouse.IShape.SidesCount">
             <summary>
             Number of sides for a shape
             </summary>
             <returns><see cref="T:System.Int32"/></returns>
             <remarks>Returns the number of sides</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.IShape.Perimeter">
+        <member name="M:DarkHouse.IShape.Perimeter">
             <summary>
             Perimeter of a shape
             </summary>
             <returns><see cref="T:System.Single"/></returns>
             <remarks>Returns the total perimeter of a shape</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.IShape.Area">
+        <member name="M:DarkHouse.IShape.Area">
             <summary>
             Area of a shape
             </summary>
             <returns><see cref="T:System.Single"/></returns>
             <remarks>Returns the surface area of a shape</remarks>
         </member>
-        <member name="T:DarkHouse.Shapes.IShape2D">
+        <member name="T:DarkHouse.IShape2D">
             <summary>
             IShape2D Interface
             </summary>
             <remarks>Defines a two dimensional shape (2D shape)</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.IShape2D.Sides">
+        <member name="P:DarkHouse.IShape2D.Sides">
             <summary>
             Sides for a 2D shape
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.Shapes.Side"/></returns>
-            <remarks>Returns the sides (array of <see cref="T:DarkHouse.Shapes.Side"/>) for a 2D shape</remarks>
+            <returns>Array of <see cref="T:DarkHouse.Side"/></returns>
+            <remarks>Returns the sides (array of <see cref="T:DarkHouse.Side"/>) for a 2D shape</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.IShape2D.Angles">
+        <member name="P:DarkHouse.IShape2D.Angles">
             <summary>
             Angles for a pair of 2D sides
             </summary>
@@ -855,89 +855,89 @@
             Angles count counter clockwise from bottom-most left-most point.
             </remarks>
         </member>
-        <member name="T:DarkHouse.Shapes.IShape3D">
+        <member name="T:DarkHouse.IShape3D">
             <summary>
             IShape3D Interface
             </summary>
             <remarks>Defines a three dimensional shape (3D shape)</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.IShape3D.Sides">
+        <member name="P:DarkHouse.IShape3D.Sides">
             <summary>
             Sides for a 3D shape
             </summary>
-            <returns>Array of <see cref="T:DarkHouse.Shapes.Side3D"/></returns>
-            <remarks>Returns the sides (array of <see cref="T:DarkHouse.Shapes.Side3D"/>) for a 3D shape</remarks>
+            <returns>Array of <see cref="T:DarkHouse.Side3D"/></returns>
+            <remarks>Returns the sides (array of <see cref="T:DarkHouse.Side3D"/>) for a 3D shape</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.IShape3D.EdgesCount">
+        <member name="P:DarkHouse.IShape3D.EdgesCount">
             <summary>
             Get the number of edges of a 3D shape
             </summary>
             <returns><see cref="T:System.Int32"/></returns>
             <remarks>Returns the number of edges for a 3D shape</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.IShape3D.VerticesCount">
+        <member name="P:DarkHouse.IShape3D.VerticesCount">
             <summary>
             Get the number of vertices of a 3D shape
             </summary>
             <returns><see cref="T:System.Int32"/></returns>
             <remarks>Returns the number of vertices for a 3D shape</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.IShape3D.Volume">
+        <member name="M:DarkHouse.IShape3D.Volume">
             <summary>
             Get the volume for a shape
             </summary>
             <returns><see cref="T:System.Single"/></returns>
             <remarks>Returns the volume of a 3D shape</remarks>
         </member>
-        <member name="T:DarkHouse.Shapes.ISpace">
+        <member name="T:DarkHouse.ISpace">
             <summary>
             ISpace Interface
             </summary>
             <remarks>Defines a space</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.ISpace.OriginPoint">
+        <member name="P:DarkHouse.ISpace.OriginPoint">
             <summary>
             The initial coordinate point for a space. It is always (0,0)
             </summary>
             <remarks>Returns the origin point  coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
         </member>
-        <member name="T:DarkHouse.Shapes.ISpace2D">
+        <member name="T:DarkHouse.ISpace2D">
             <summary>
             ISpace2D Interface
             </summary>
             <remarks>Defines a 2D space</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.ISpace2D.XAxis">
+        <member name="P:DarkHouse.ISpace2D.XAxis">
             <summary>
             The X axis point for a space. Acceptable value is (0,X). X must larger than 0.
             </summary>
             <remarks>Returns the X coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.ISpace2D.YAxis">
+        <member name="P:DarkHouse.ISpace2D.YAxis">
             <summary>
             The Y axis point for a space. Acceptable value is (0,Y). Y must larger than 0.
             </summary>
             <remarks>Returns the Y coordinate for a space using a <see cref="T:System.Drawing.PointF" /></remarks>
         </member>
-        <member name="T:DarkHouse.Shapes.ISpace3D">
+        <member name="T:DarkHouse.ISpace3D">
             <summary>
             ISpace3D Interface
             </summary>
             <remarks>Defines a 3D space</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.ISpace3D.ZAxis">
+        <member name="P:DarkHouse.ISpace3D.ZAxis">
             <summary>
             The Z axis point for a space. Acceptable value is (0,Z). Z must larger than 0.
             </summary>
             <remarks>Returns the Y coordinate for a 3D space using a <see cref="T:System.Drawing.PointF" /></remarks>
         </member>
-        <member name="T:DarkHouse.Shapes.PointF3D">
+        <member name="T:DarkHouse.PointF3D">
             <summary>
             PointF3D Struct
             </summary>
             <remarks>Defines a 3D point in float values</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.PointF3D.#ctor(System.Single,System.Single,System.Single)">
+        <member name="M:DarkHouse.PointF3D.#ctor(System.Single,System.Single,System.Single)">
             <summary>
             Constructor of a PointF3D
             </summary>
@@ -946,62 +946,62 @@
             <param name="z">Z axis point</param>
             <remarks>Defines a new PointF3D with a given X, Y, and Z points</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.PointF3D.X">
+        <member name="P:DarkHouse.PointF3D.X">
             <summary>
             X axis point for a PointF3D
             </summary>
             <returns><see cref="T:System.Single"/></returns>
             <remarks>Returns the X axis point</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.PointF3D.Y">
+        <member name="P:DarkHouse.PointF3D.Y">
             <summary>
             Y axis point for a PointF3D
             </summary>
             <returns><see cref="T:System.Single"/></returns>
             <remarks>Returns the Y axis point</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.PointF3D.Z">
+        <member name="P:DarkHouse.PointF3D.Z">
             <summary>
             Z axis point for a PointF3D
             </summary>
             <returns><see cref="T:System.Single"/></returns>
             <remarks>Returns the Z axis point</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.PointF3D.Equals(System.Object)">
+        <member name="M:DarkHouse.PointF3D.Equals(System.Object)">
             <summary>
             Overrides base Object Equals() method
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>Returns true if the compared object is a <see cref="T:DarkHouse.Shapes.PointF3D"/> and all the X/Y/Z points are equal</remarks>
+            <remarks>Returns true if the compared object is a <see cref="T:DarkHouse.PointF3D"/> and all the X/Y/Z points are equal</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.PointF3D.GetHashCode">
+        <member name="M:DarkHouse.PointF3D.GetHashCode">
             <summary>
             Overrides base Object GetHashCode() method
             </summary>
             <returns><see cref="T:System.Int32"/></returns>
             <remarks>Returns the AND values for the object and its X/Y/Z GetHashCode()</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.PointF3D.op_Equality(DarkHouse.Shapes.PointF3D,DarkHouse.Shapes.PointF3D)">
+        <member name="M:DarkHouse.PointF3D.op_Equality(DarkHouse.PointF3D,DarkHouse.PointF3D)">
             <summary>
-            Operator == for <see cref="T:DarkHouse.Shapes.PointF3D"/>
+            Operator == for <see cref="T:DarkHouse.PointF3D"/>
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>Returns true if the compared <see cref="T:DarkHouse.Shapes.PointF3D"/> has all equal X/Y/Z point values</remarks>
+            <remarks>Returns true if the compared <see cref="T:DarkHouse.PointF3D"/> has all equal X/Y/Z point values</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.PointF3D.op_Inequality(DarkHouse.Shapes.PointF3D,DarkHouse.Shapes.PointF3D)">
+        <member name="M:DarkHouse.PointF3D.op_Inequality(DarkHouse.PointF3D,DarkHouse.PointF3D)">
             <summary>
-            Operator != for <see cref="T:DarkHouse.Shapes.PointF3D"/>
+            Operator != for <see cref="T:DarkHouse.PointF3D"/>
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>Returns true if the compared <see cref="T:DarkHouse.Shapes.PointF3D"/> object has at least one unequal value for their X/Y/Z points</remarks>
+            <remarks>Returns true if the compared <see cref="T:DarkHouse.PointF3D"/> object has at least one unequal value for their X/Y/Z points</remarks>
         </member>
-        <member name="T:DarkHouse.Shapes.Side">
+        <member name="T:DarkHouse.Side">
             <summary>
             Side struct
             </summary>
             <remarks>Defines side of a shape</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side.#ctor(System.Drawing.PointF,System.Drawing.PointF)">
+        <member name="M:DarkHouse.Side.#ctor(System.Drawing.PointF,System.Drawing.PointF)">
             <summary>
             Constructor of a Side
             </summary>
@@ -1009,62 +1009,62 @@
             <param name="pointB">Second side point</param>
             <remarks>Defines a new side with a given length</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side.Length">
+        <member name="M:DarkHouse.Side.Length">
             <summary>
-            Distance or length of a <see cref="T:DarkHouse.Shapes.Side"/>
+            Distance or length of a <see cref="T:DarkHouse.Side"/>
             </summary>
             <returns><see cref="T:System.Single"/></returns>
-            <remarks>Returns the distance or length of a <see cref="T:DarkHouse.Shapes.Side"/></remarks>
+            <remarks>Returns the distance or length of a <see cref="T:DarkHouse.Side"/></remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.Side.PointA">
+        <member name="P:DarkHouse.Side.PointA">
             <summary>
-            Distance or length of a <see cref="T:DarkHouse.Shapes.Side"/>
+            Distance or length of a <see cref="T:DarkHouse.Side"/>
             </summary>
             <returns><see cref="T:System.Drawing.PointF"/></returns>
             <remarks>Returns the first point of a side for 2D shape</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.Side.PointB">
+        <member name="P:DarkHouse.Side.PointB">
             <summary>
             Second point of a side
             </summary>
             <returns><see cref="T:System.Drawing.PointF"/></returns>
             <remarks>Returns the second point of a side for 2D shape</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side.Equals(System.Object)">
+        <member name="M:DarkHouse.Side.Equals(System.Object)">
             <summary>
             Overrides base Object Equals() method
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>Returns true if the compared object is a <see cref="T:DarkHouse.Shapes.Side"/> and all the PointA and PointB are equal</remarks>
+            <remarks>Returns true if the compared object is a <see cref="T:DarkHouse.Side"/> and all the PointA and PointB are equal</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side.GetHashCode">
+        <member name="M:DarkHouse.Side.GetHashCode">
             <summary>
             Overrides base Object GetHashCode() method
             </summary>
             <returns><see cref="T:System.Int32"/></returns>
             <remarks>Returns the AND values for the object and its __pointA and __pointB GetHashCode()</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side.op_Equality(DarkHouse.Shapes.Side,DarkHouse.Shapes.Side)">
+        <member name="M:DarkHouse.Side.op_Equality(DarkHouse.Side,DarkHouse.Side)">
             <summary>
-            Operator == for <see cref="T:DarkHouse.Shapes.Side"/>
+            Operator == for <see cref="T:DarkHouse.Side"/>
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>Returns true if the compared <see cref="T:DarkHouse.Shapes.Side"/> has all equal PointA and PointB values</remarks>
+            <remarks>Returns true if the compared <see cref="T:DarkHouse.Side"/> has all equal PointA and PointB values</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side.op_Inequality(DarkHouse.Shapes.Side,DarkHouse.Shapes.Side)">
+        <member name="M:DarkHouse.Side.op_Inequality(DarkHouse.Side,DarkHouse.Side)">
             <summary>
-            Operator != for <see cref="T:DarkHouse.Shapes.Side"/>
+            Operator != for <see cref="T:DarkHouse.Side"/>
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>Returns true if the compared <see cref="T:DarkHouse.Shapes.Side"/> object has at least one unequal value for their PointA and PointB values</remarks>
+            <remarks>Returns true if the compared <see cref="T:DarkHouse.Side"/> object has at least one unequal value for their PointA and PointB values</remarks>
         </member>
-        <member name="T:DarkHouse.Shapes.Side3D">
+        <member name="T:DarkHouse.Side3D">
             <summary>
             Side struct
             </summary>
             <remarks>Defines side of a shape</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side3D.#ctor(DarkHouse.Shapes.PointF3D,DarkHouse.Shapes.PointF3D)">
+        <member name="M:DarkHouse.Side3D.#ctor(DarkHouse.PointF3D,DarkHouse.PointF3D)">
             <summary>
             Constructor of a Side3D
             </summary>
@@ -1072,54 +1072,54 @@
             <param name="pointB">Second side point</param>
             <remarks>Defines a new side with a given length</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side3D.Length">
+        <member name="M:DarkHouse.Side3D.Length">
             <summary>
-            Distance or length of a <see cref="T:DarkHouse.Shapes.Side3D"/>
+            Distance or length of a <see cref="T:DarkHouse.Side3D"/>
             </summary>
             <returns><see cref="T:System.Single"/></returns>
-            <remarks>Returns the distance or length of a <see cref="T:DarkHouse.Shapes.Side3D"/></remarks>
+            <remarks>Returns the distance or length of a <see cref="T:DarkHouse.Side3D"/></remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.Side3D.PointA">
+        <member name="P:DarkHouse.Side3D.PointA">
             <summary>
             First point of a side
             </summary>
             <returns><see cref="T:System.Drawing.PointF"/></returns>
             <remarks>Returns the first point of a side for 3D shape</remarks>
         </member>
-        <member name="P:DarkHouse.Shapes.Side3D.PointB">
+        <member name="P:DarkHouse.Side3D.PointB">
             <summary>
             Second point of a side
             </summary>
             <returns><see cref="T:System.Drawing.PointF"/></returns>
             <remarks>Returns the second point of a side for 3D shape</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side3D.Equals(System.Object)">
+        <member name="M:DarkHouse.Side3D.Equals(System.Object)">
             <summary>
             Overrides base Object Equals() method
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>Returns true if the compared object is a <see cref="T:DarkHouse.Shapes.Side"/> and all the PointA and PointB are equal</remarks>
+            <remarks>Returns true if the compared object is a <see cref="T:DarkHouse.Side"/> and all the PointA and PointB are equal</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side3D.GetHashCode">
+        <member name="M:DarkHouse.Side3D.GetHashCode">
             <summary>
             Overrides base Object GetHashCode() method
             </summary>
             <returns><see cref="T:System.Int32"/></returns>
             <remarks>Returns the AND values for the object and its __pointA and __pointB GetHashCode()</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side3D.op_Equality(DarkHouse.Shapes.Side3D,DarkHouse.Shapes.Side3D)">
+        <member name="M:DarkHouse.Side3D.op_Equality(DarkHouse.Side3D,DarkHouse.Side3D)">
             <summary>
-            Operator == for <see cref="T:DarkHouse.Shapes.Side"/>
+            Operator == for <see cref="T:DarkHouse.Side"/>
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>Returns true if the compared <see cref="T:DarkHouse.Shapes.Side"/> has all equal PointA and PointB values</remarks>
+            <remarks>Returns true if the compared <see cref="T:DarkHouse.Side"/> has all equal PointA and PointB values</remarks>
         </member>
-        <member name="M:DarkHouse.Shapes.Side3D.op_Inequality(DarkHouse.Shapes.Side3D,DarkHouse.Shapes.Side3D)">
+        <member name="M:DarkHouse.Side3D.op_Inequality(DarkHouse.Side3D,DarkHouse.Side3D)">
             <summary>
-            Operator != for <see cref="T:DarkHouse.Shapes.Side"/>
+            Operator != for <see cref="T:DarkHouse.Side"/>
             </summary>
             <returns><see cref="T:System.Boolean"/></returns>
-            <remarks>Returns true if the compared <see cref="T:DarkHouse.Shapes.Side"/> object has at least one unequal value for their PointA and PointB values</remarks>
+            <remarks>Returns true if the compared <see cref="T:DarkHouse.Side"/> object has at least one unequal value for their PointA and PointB values</remarks>
         </member>
     </members>
 </doc>

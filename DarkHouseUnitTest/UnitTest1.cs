@@ -1,5 +1,5 @@
 using NUnit.Framework;
-using DarkHouse.Inventory.HouseHoldItem;
+using DarkHouse;
 
 namespace DarkHouseUnitTest
 {

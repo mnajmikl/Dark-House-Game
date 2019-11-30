@@ -6,7 +6,7 @@
 
 using System.Drawing;
 
-namespace DarkHouse.Shapes
+namespace DarkHouse
 {
     /// <summary>
     /// IShape3D Interface

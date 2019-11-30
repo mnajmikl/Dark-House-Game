@@ -7,7 +7,7 @@
 using System.Drawing;
 using System.Collections.Generic;
 
-namespace DarkHouse.Shapes
+namespace DarkHouse
 {
     /// <summary>
     /// IShape2D Interface

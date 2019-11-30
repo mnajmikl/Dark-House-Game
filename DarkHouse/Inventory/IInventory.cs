@@ -6,7 +6,7 @@
 
 using System.Collections.Generic;
 
-namespace DarkHouse.Inventory
+namespace DarkHouse
 {
     /// <summary>
     /// IInventory Interface

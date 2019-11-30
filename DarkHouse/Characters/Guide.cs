@@ -4,9 +4,7 @@
  * Copyright (c) 2019 Mohammad Najmi
  */
 
-using DarkHouse.Inventory;
-
-namespace DarkHouse.Characters
+namespace DarkHouse
 {
     /// <summary>
     /// Class Guide

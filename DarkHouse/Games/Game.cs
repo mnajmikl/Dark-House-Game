@@ -5,9 +5,8 @@
  */
 
 using DarkHouse.House;
-using DarkHouse.Characters;
 
-namespace DarkHouse.Games
+namespace DarkHouse
 {
     /// <summary>
     /// Class Game
