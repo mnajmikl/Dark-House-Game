@@ -162,7 +162,7 @@
             </summary>
             <param name="description">Description of the Guide</param>
             <param name="inventories"><see cref="T:DarkHouse.IInventory"/> of the Guide</param>
-            <param name="title">Guide title</param>
+            <param name="tag">Guide title</param>
             <param name="name">Guide name</param>
             <remarks>Defines a new Guide with name, title, and description</remarks>
         </member>
@@ -173,7 +173,7 @@
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the Guide name</remarks>
         </member>
-        <member name="P:DarkHouse.Guide.Title">
+        <member name="P:DarkHouse.Guide.Tag">
             <summary>
             Guide title
             </summary>
@@ -200,27 +200,6 @@
             </summary>
             <remarks>Defines a game character</remarks>
         </member>
-        <member name="P:DarkHouse.ICharacter.Name">
-            <summary>
-            Character name
-            </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the character name</remarks>
-        </member>
-        <member name="P:DarkHouse.ICharacter.Title">
-            <summary>
-            Character title
-            </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the character tag</remarks>
-        </member>
-        <member name="P:DarkHouse.ICharacter.Description">
-            <summary>
-            Character description
-            </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the character tag</remarks>
-        </member>
         <member name="P:DarkHouse.ICharacter.Inventories">
             <summary>
             Character inventories
@@ -240,7 +219,7 @@
             </summary>
             <param name="description">Description of the Player</param>
             <param name="inventories"><see cref="T:DarkHouse.IInventory"/> of the Player</param>
-            <param name="title">Player title</param>
+            <param name="tag">Player title</param>
             <param name="name">Player name</param>
             <remarks>Defines a new Player with name, title, and description</remarks>
         </member>
@@ -251,7 +230,7 @@
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the Player name</remarks>
         </member>
-        <member name="P:DarkHouse.Player.Title">
+        <member name="P:DarkHouse.Player.Tag">
             <summary>
             Player title
             </summary>
@@ -284,7 +263,7 @@
             </summary>
             <param name="description">Description of the Spook</param>
             <param name="inventories"><see cref="T:DarkHouse.IInventory"/> of the Spook</param>
-            <param name="title">Spook title</param>
+            <param name="tag">Spook title</param>
             <param name="name">Spook display name</param>
             <remarks>Defines a new Spook with name, title, and description</remarks>
         </member>
@@ -295,7 +274,7 @@
             <returns><see cref="T:System.String"/></returns>
             <remarks>Get or set the Spook name</remarks>
         </member>
-        <member name="P:DarkHouse.Spook.Title">
+        <member name="P:DarkHouse.Spook.Tag">
             <summary>
             Spook title
             </summary>
@@ -447,33 +426,6 @@
             <returns>Array of <see cref="T:DarkHouse.IInventory"/></returns>
             <remarks>Get the House inventories</remarks>
         </member>
-        <member name="T:DarkHouse.IHousePart">
-            <summary>
-            IHousePart Interface
-            </summary>
-            <remarks>Defines a house part</remarks>
-        </member>
-        <member name="P:DarkHouse.IHousePart.Name">
-            <summary>
-            House part name
-            </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the house part name</remarks>
-        </member>
-        <member name="P:DarkHouse.IHousePart.Tag">
-            <summary>
-            House part tag
-            </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the house part tag</remarks>
-        </member>
-        <member name="P:DarkHouse.IHousePart.Description">
-            <summary>
-            House part description
-            </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the house part tag</remarks>
-        </member>
         <member name="T:DarkHouse.House.IKey">
             <summary>
             IKey Interface
@@ -518,6 +470,33 @@
             IWindow Interface
             </summary>
             <remarks>Defines a window</remarks>
+        </member>
+        <member name="T:DarkHouse.IIdentity">
+            <summary>
+            IIdentity Interface
+            </summary>
+            <remarks>Defines identity of Dark House objects</remarks>
+        </member>
+        <member name="P:DarkHouse.IIdentity.Name">
+            <summary>
+            Object name
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the object name</remarks>
+        </member>
+        <member name="P:DarkHouse.IIdentity.Tag">
+            <summary>
+            Object tag
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the object tag</remarks>
+        </member>
+        <member name="P:DarkHouse.IIdentity.Description">
+            <summary>
+            Object description
+            </summary>
+            <returns><see cref="T:System.String"/></returns>
+            <remarks>Get or set the object description</remarks>
         </member>
         <member name="T:DarkHouse.Appliance">
             <summary>
@@ -706,27 +685,6 @@
             </summary>
             <remarks>Defines area of an inventory</remarks>
         </member>
-        <member name="P:DarkHouse.IInventory.Name">
-            <summary>
-            Inventory name
-            </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the inventory name</remarks>
-        </member>
-        <member name="P:DarkHouse.IInventory.Tag">
-            <summary>
-            Inventory tag
-            </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the inventory tag</remarks>
-        </member>
-        <member name="P:DarkHouse.IInventory.Description">
-            <summary>
-            Inventory description
-            </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the inventory tag</remarks>
-        </member>
         <member name="M:DarkHouse.IInventory.Add(DarkHouse.IItem)">
             <summary>
             Add item to the inventory
@@ -769,27 +727,6 @@
             IItem Interface
             </summary>
             <remarks>Defines area of an item</remarks>
-        </member>
-        <member name="P:DarkHouse.IItem.Name">
-            <summary>
-            Item name
-            </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the item name</remarks>
-        </member>
-        <member name="P:DarkHouse.IItem.Tag">
-            <summary>
-            Item tag
-            </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the item tag</remarks>
-        </member>
-        <member name="P:DarkHouse.IItem.Description">
-            <summary>
-            Item description
-            </summary>
-            <returns><see cref="T:System.String"/></returns>
-            <remarks>Get or set the item tag</remarks>
         </member>
         <member name="M:DarkHouse.IItem.Inspect">
             <summary>
