@@ -32,7 +32,9 @@ namespace DarkHouse
             __tag = tag;
             __description = description;
 
-            if (inventories != null && inventories.Length > 0)
+            // Shortcut for if (inventories != null && inventories.Length > 0)
+            if (inventories?.Length >0)
+            // if (inventories != null && inventories.Length > 0)
             {
                 __inventories = new IInventory[inventories.Length];
                 inventories.CopyTo(__inventories, 0);
